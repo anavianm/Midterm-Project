@@ -1,3 +1,44 @@
 body {
     font-family: 'Roboto', arial, helvetica, sans-serif;
+    background-color: #f2eee5;
+}
+
+header {
+}
+
+footer {
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #ffc87a;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+}
+nav ul li {
+    display: inline-block;
+}
+
+nav a {
+    color: #fff; 
+    font-size: 12px; 
+    text-decoration: none;
+    padding: 20px;
+    letter-spacing: 2px;
+}
+nav a:hover {
+    /* color:; */
+}
+
+.button {
+}
+
+.button:hover {
 }
