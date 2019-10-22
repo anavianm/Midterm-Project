@@ -11,59 +11,56 @@
 	
 	@import url(https://fonts.googleapis.com/css?family=Roboto:400,300);
 	
-	.html{
-		margin: auto 0px;
+	
+	.row1{
+		text-align: center;
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		width: 100%;
+		position: relative;
 	}
 	
 	.card {
+		margin-top: 20px;
+		margin-left: 10px;
+		margin-right: 10px;
 		float: left;
-		margin: 5px;
-		width: 20%;
-		max-height: 300px;
 		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 		transition: 0.3s;
+		width: 20%;
+/*		left: 305;*/
+		
 		
 	}
 
 	.card:hover {
-/*		box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);*/
+		box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 	}
 
 	.container {
-		max-height: auto;
-		padding:16px;
-/*		height: auto;*/
-/*		margin: 0, auto;*/
-		text-align: center;
-		position: relative;
-		padding-left: 30px;
-		
-/*
-		float: left;
-		margin: 5px;
-		width: 20%;
-		height: auto;
-*/
+		padding: 2px 16px;
 	}
 	
+/*
 	.front{
 		height: inherit;
-		max-height: 450px;
+		max-height: 300px;
 		
 	}
 	
+*/
 	.back{
 		background-color: #CCC2C2;
-		margin-top: inherit;
-		margin-top: -21px;
-		max-height: 450px;
 	}
 	
+/*
 	.row1{
 		text-align: center;
 		margin-left: auto;
 		margin-right: auto;
 	}
+*/
 	
 </style>
 </head>
@@ -72,64 +69,105 @@
 	
 <!-- This is where the navbar will go	-->
 	
-	<div class="container">
-		
-		<div class="row1">
-		
-		
+	<div class="row1">
 		<div class="card" id="1">
-				<div class="front" id="front1">
-					<img src="goldenRetriever.jpeg" alt="Avatar" style="width:100%">
-				</div>
-			
-				<div class="back" id="back1">
-					<h4><b>Lucy</b></h4>
-					<h4><b>Golden Retriever</b></h4>
-					<p>Lucy is a loyal active girl who runs around and </p>
-					<p>loves bacon and broccoli</p>
-				</div>	
-			
+			<div class="front" id="front1">
+				<img src="goldenRetriever.jpeg" alt="Avatar" style="width:100%">
+					<div class="container">
+						<h4><b>Lucy</b></h4> 
+						<p>Golden Retriever</p> 
+					</div>
+			</div>
+			<div class="back" id="back1">
+					<div class="container">
+						<h4><b>Fun and Lovable</b></h4> 
+						<p>Loves chew toys</p> 
+					</div>
+			</div>
 		</div>
-<!--		-->
+
 		<div class="card" id="2">
-				<div class="front" id="front2">
-					<img src="beagle.jpg" alt="Avatar" style="width:100%">
-				</div>
-			
-				<div class="back" id="back2">
-					<h4><b>Lucy</b></h4>
-					<p>4 Years old</p>
-					<p>Loves to play</p>
-					<h4><b>Golden Retriever</b></h4>
-					<p>Lucy is a loyal active girl who runs around and </p>
-					<p>loves bacon and broccoli</p>
-				</div>	
-			
+			<div class="front" id="front2">
+				<img src="beagle.jpg" alt="Avatar" style="width:100%">
+					<div class="container">
+						<h4><b>Lucy</b></h4> 
+						<p>Golden Retriever</p> 
+					</div>
+			</div>
+			<div class="back" id="back2">
+					<div class="container">
+						<h4><b>Fun and Lovable</b></h4> 
+						<p>Loves chew toys</p> 
+					</div>
+			</div>
 		</div>
 		
 		<div class="card" id="3">
-				<div class="front" id="front3">
-					<img src="poodle.jpg" alt="Avatar" style="width:100%">
+			<div class="front" id="front3">
+				<img src="poodle.jpg" alt="Avatar" style="width:100%">
+					<div class="container">
+						<h4><b>Lucy</b></h4> 
+						<p>Golden Retriever</p> 
+					</div>
+			</div>
+			<div class="back" id="back3">
+					<div class="container">
+						<h4><b>Fun and Lovable</b></h4> 
+						<p>Loves chew toys</p> 
+					</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="row1">
+		<div class="card" id="4">
+				<div class="front" id="front4">
+					<img src="goldenRetriever.jpeg" alt="Avatar" style="width:100%">
+						<div class="container">
+							<h4><b>Lucy</b></h4> 
+							<p>Golden Retriever</p> 
+						</div>
 				</div>
-			
-				<div class="back" id="back3">
-					<h4><b>Lucy</b></h4>
-					<p>4 Years old</p>
-					<p>Loves to play</p>
-					<h4><b>Golden Retriever</b></h4>
-					<p>Lucy is a loyal active girl who runs around and </p>
-					<p>loves bacon and broccoli</p>
-				</div>	
-			
+				<div class="back" id="back4">
+						<div class="container">
+							<h4><b>Fun and Lovable</b></h4> 
+							<p>Loves chew toys</p> 
+						</div>
+				</div>
 		</div>
 		
-
-	</div>
-
+		<div class="card" id="5">
+				<div class="front" id="front5">
+					<img src="goldenRetriever.jpeg" alt="Avatar" style="width:100%">
+						<div class="container">
+							<h4><b>Lucy</b></h4> 
+							<p>Golden Retriever</p> 
+						</div>
+				</div>
+				<div class="back" id="back5">
+						<div class="container">
+							<h4><b>Fun and Lovable</b></h4> 
+							<p>Loves chew toys</p> 
+						</div>
+				</div>
+		</div>
 		
+		<div class="card" id="6">
+				<div class="front" id="front6">
+					<img src="goldenRetriever.jpeg" alt="Avatar" style="width:100%">
+						<div class="container">
+							<h4><b>Lucy</b></h4> 
+							<p>Golden Retriever</p> 
+						</div>
+				</div>
+				<div class="back" id="back6">
+						<div class="container">
+							<h4><b>Fun and Lovable</b></h4> 
+							<p>Loves chew toys</p> 
+						</div>
+				</div>
+		</div>
 	</div>
-	
-	
 	
 	
 	<script language="javascript">
@@ -143,7 +181,7 @@
 			autoSize: true,
 			forceHeight: true
 		});
-		
+//		
 		$("#2").flip({
 			front: '#front2', 
 			back: '#back2',
@@ -153,7 +191,7 @@
 			forceHeight: true
 		});
 		
-		
+//		
 		$("#3").flip({
 			front: '#front3', 
 			back: '#back3',
@@ -163,7 +201,33 @@
 			forceHeight: true
 		});
 		
+		$("#4").flip({
+			front: '#front4', 
+			back: '#back4',
+			trigger: 'hover', 
+			reverse: true, 
+			autoSize: true,
+			forceHeight: true
+		});
+//		
+		$("#5").flip({
+			front: '#front5', 
+			back: '#back5',
+			trigger: 'hover', 
+			reverse: true, 
+			autoSize: true,
+			forceHeight: true
+		});
 		
+		$("#6").flip({
+			front: '#front6', 
+			back: '#back6',
+			trigger: 'hover', 
+			reverse: true, 
+			autoSize: true,
+			forceHeight: true
+		});
+//		
 //		$(document).ready(function(){
 //			$("#1").flip(true);
 //			
