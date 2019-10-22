@@ -11,14 +11,18 @@
 	
 	@import url(https://fonts.googleapis.com/css?family=Roboto:400,300);
 	
+	.html{
+		margin: auto 0px;
+	}
+	
 	.card {
 		float: left;
 		margin: 5px;
 		width: 20%;
-/*		height: auto;*/
+		max-height: 300px;
 		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 		transition: 0.3s;
-/*		padding: 5px;*/
+		
 	}
 
 	.card:hover {
@@ -26,12 +30,13 @@
 	}
 
 	.container {
-		max-height: 300px;
+		max-height: auto;
 		padding:16px;
 /*		height: auto;*/
 /*		margin: 0, auto;*/
 		text-align: center;
-/*		position: relative;*/
+		position: relative;
+		padding-left: 30px;
 		
 /*
 		float: left;
@@ -54,6 +59,11 @@
 		max-height: 450px;
 	}
 	
+	.row1{
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
 	
 </style>
 </head>
@@ -63,6 +73,9 @@
 <!-- This is where the navbar will go	-->
 	
 	<div class="container">
+		
+		<div class="row1">
+		
 		
 		<div class="card" id="1">
 				<div class="front" id="front1">
@@ -111,7 +124,7 @@
 		</div>
 		
 
-
+	</div>
 
 		
 	</div>
