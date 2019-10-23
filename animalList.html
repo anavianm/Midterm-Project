@@ -227,6 +227,56 @@
 		</div>
 	</div>
 	
+	<div class="row1 hideme">
+		<div class="card" id="10">
+				<div class="front" id="front10">
+					<img src="chocola.jpg" alt="Avatar" style="width:100%">
+						<div class="container">
+							<h1><b>Chocola</b></h1> 
+							<h3>Toy Poodle</h3> 
+						</div>
+				</div>
+				<div class="back" id="back10">
+						<div class="container">
+							<h4><b>Loves people and running</b></h4> 
+							<p>She gets lost alot</p> 
+						</div>
+				</div>
+		</div>
+		
+		<div class="card" id="11">
+				<div class="front" id="front11">
+					<img src="dambo.jpg" alt="Avatar" style="width:100%">
+						<div class="container">
+							<h1><b>Dambo</b></h1> 
+							<h3>Miniature Dachshund</h3> 
+						</div>
+				</div>
+				<div class="back" id="back11">
+						<div class="container">
+							<h4><b>Old but still loveable</b></h4> 
+							<p>She likes to eat anything and everything!</p> 
+						</div>
+				</div>
+		</div>
+		
+		<div class="card" id="12">
+				<div class="front" id="front12">
+					<img src="mogu.jpg" alt="Avatar" style="width:100%">
+						<div class="container">
+							<h1><b>Mogu</b></h1> 
+							<h3>Yorkshire Terrier</h3> 
+						</div>
+				</div>
+				<div class="back" id="back12">
+						<div class="container">
+							<h4><b>Mogu Mogu she loves to eat!</b></h4> 
+							<p>Very active and does not like leashes</p> 
+						</div>
+				</div>
+		</div>
+	</div>
+	
 	
 	<script language="javascript">
 		var $id = "#";
@@ -234,7 +284,7 @@
 		var $back = "#back";
 		
 		$(document).ready(function(){
-			for(var i = 1; i < 10; i++ ){
+			for(var i = 1; i < 13; i++ ){
 				$($id + i).flip({
 					front: $front + i,
 					back: $back + i,
@@ -307,11 +357,12 @@
 			$(window).scroll( function(){
 				$('.hideme').each( function(i){
             
-					var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+					var bottom_of_object = ($(this).offset().top + $(this).outerHeight())/1.4;
 					var bottom_of_window = $(window).scrollTop() + $(window).height();
 
 					if( bottom_of_window > bottom_of_object ){
-						$(this).animate({'opacity':'1'},500);
+						$(this).animate({'opacity':'1'},1000);
+						
 
 					}
 
