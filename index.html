@@ -3,51 +3,243 @@
     <meta charset="utf-8">
     <meta name="author" content="Korr, Max, Hyejin, and Mitch">
     <title>Midterm Project</title>
-    <link href="style.css" rel="stylesheet">
+    <!-- <link href="style.css" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css?family=Roboto|Poppins:400,500i,900i|VT323&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <style>
+        body,html {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        }
+
+        body {
+            font-family: 'Roboto', arial, helvetica, sans-serif;
+        }
+
+        .main {
+            text-align: center; 
+            width:100%;
+            height: 95%;
+            color:#fff;  
+            box-sizing: border-box;
+            background-image: url("assets/img/main4.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            flex-direction: vertical;     
+            justify-content: center;       
+            margin: auto;
+            vertical-align: middle;
+        }
+
+        .main h1 {
+            font-size: 42px;
+        }
+
+        .wrapper {
+            margin: auto;
+            /* padding: 150px; */
+        }
+
+        .wrapper img {
+            width: 15%;
+            
+        }
+       
+        .navbar {
+            overflow: hidden;
+            background-color: #c2e8ce;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 15px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #7bc48e; 
+            text-decoration: none;
+            padding: 20px;
+        }
+        nav a:hover {
+            color: #fff;
+        }
+
+        nav .siteName {
+            text-align: left;
+            color: #5ca56f;
+            font-weight: 1000;
+            font-size: 20px;
+        }
+        nav ul {
+            list-style-type: none;
+        }
+        nav ul li {
+            display: inline-block;
+        }
+        h1 {
+            font-size: 40px;
+        }
+        h2 {
+            font-size: 32px;
+            margin-bottom: 0px;
+        }
+        header p {
+            font-size: 1.1rem;
+        }
+        footer p {
+            font-size: 0.8rem;
+        }
+        
+        .button {
+            background-color: #f6ad7b;
+            border: none;
+            color: #ffffff;
+            padding: 20px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1rem;
+            margin: auto;
+            cursor: pointer;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            display: block;
+            text-align: center;
+            width: 220px;
+            border-radius: 30px;
+        }
+        .button:hover {
+            background-color: #f5914e;
+        }
+
+        .button-small {
+            background-color: #c47845;
+            border: none;
+            color: #ffffff;
+            padding: 15px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1rem;
+            margin: auto;
+            cursor: pointer;
+            /* letter-spacing: 1px; */
+            /* text-transform: uppercase; */
+            display: block;
+            text-align: center;
+            width: 40%;
+            border-radius: 30px;
+        }
+
+        .button-small:hover {
+            background-color: #965529;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center; 
+            padding: 50px 20px;
+            font-family: 'Open Sans', arial, helvetica, sans-serif;
+            font-size: 12px;
+        }
+
+        footer a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #c2e8ce;
+            text-decoration: underline;
+        }
+
+        .container {
+            margin: auto;
+            padding: 40px 20px;
+            text-align: center; 
+            width:100%;
+            /* height: 80%; */
+            background-color:#f2eee5;  
+            box-sizing: border-box;
+            /* display: flex; */
+            /* flex-direction: vertical;      */
+            /* justify-content: center;        */
+            /* margin: auto; */
+            /* vertical-align: middle; */
+        }
+
+        .row {
+            /* width: 100%;
+            text-align: center;
+            flex-direction: horizontal; */
+
+            display:-ms-flexbox;
+            display:flex;
+            -ms-flex-wrap:wrap;
+            flex-wrap:wrap;
+            margin-right:-15px;
+            margin-left:-15px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        .column {
+            /* width: 30%; */
+
+            -ms-flex:0 0 33.333333%;
+            flex:0 0 33.333333%;
+            max-width:33.333333%;
+        }
+    </style>
 </head>
 <body>
-<header>
-    <nav class="navbar" id="nav">
-        <a class="item" href="index.html">Home</a>
-        <a class="item" href="about.html">About</a>
-        <a class="item" href="listing.html">Find Dogs</a>
-        <a class="item" href="policy.html">Policy</a>
-        <a class="item" href="stories.html">Stories</a>
-    </nav>
+
+<nav class="navbar" id="nav">
+    <a class="siteName" href="index.html">SiteName</a>
+    <a class="item" href="about.html">About</a>
+    <a class="item" href="listing.html">Find Dogs</a>
+    <a class="item" href="policy.html">Policy</a>
+    <a class="item" href="stories.html">Stories</a>
+</nav>
+
+<!-- Main for a primary marketing message -->
+<header class="main">
+    <div class="wrapper">
+        <h1 class="cover-heading">Dogs Find Their People</h1>
+        <p class="description">Thousands of adoptable dogs are looking for people</p>
+        <br><a href="#whatToDo" class="button">How Can I Help Them?</a>
+    </div>  
 </header>
 
-<div class="main">
-    <h1 class="cover-heading">Thousands of adoptable pets are looking for people. </h1>
-    <p class="lead">More description</p>
-    <a href="about.html" class="button-center">Learn More About Us</a>
-</div>
-
-<div class="row">
-    <h2>Planning to Adopt a Dog?</h2>
-    <div class="column">
-        <div class="wrapper">
-            <img src="" alt="" />
-            <h3>Policy for Dog Adoption</h3>
-            <p>Learn about policy for adoption</p>
-            <div class="button-center">See Policy</div>
+<!-- Row of columns -->
+<div class="container" id=whatToDo>
+    <!-- <h2>Planning to Adopt a Dog?</h2> -->
+    <div class="row">
+        <div class="column">
+            <div class="wrapper">
+                <img src="assets/icon/policy.svg" alt="Policy icon" />
+                <h3>Policy for Dog Adoption</h3>
+                <p>Learn about policy for adoption</p>
+                <div class="button-small">See Policy</div>
+            </div>
         </div>
-    </div>
-    <div class="column">
-        <div class="wrapper">
-            <img src="" alt="" />
-            <h3>Finding a Dog</h3>
-            <p>See dogs available for adoption near you and find find the right dog for you</p>
-            <div class="button-center">See Dogs</div>
+        <div class="column">
+            <div class="wrapper">
+                <img src="assets/icon/find.svg" alt="Finding icon" />
+                <h3>Finding a Dog</h3>
+                <p>See dogs available for adoption near you</p>
+                <div class="button-small">See Dogs</div>
+            </div>
         </div>
-    </div>
-    <div class="column">
-        <div class="wrapper">
-            <img src="" alt="" />
-            <h3>Successful Stories</h3>
-            <p>Description</p>
-            <div class="button-center">See Stories</div>
+        <div class="column">
+            <div class="wrapper">
+                <img src="assets/icon/story.svg" alt="Story icon" />
+                <h3>Successful Stories</h3>
+                <p>Check out successful stories</p>
+                <div class="button-small">See Stories</div>
+            </div>
         </div>
     </div>
 </div>
@@ -55,13 +247,13 @@
 <footer>
     <p>@Tufts COMP20 All rights reserved</p>
     <div class=shortcut>
-        <a class="item" href="index.html">Home</a>
-        <a class="item" href="about.html">About</a>
-        <a class="item" href="policy.html">Policy</a>
-        <a class="item" href="stories.html">Stories</a>
-        <a class="item" href="listing.html">List of Dogs</a>
-        <a class="item" href="listing.html">Details of Dog</a>
-        <a class="item" href="stories.html">Adoption Form</a>
+        <p><a class="item" href="index.html">Home</a></p>
+        <p><a class="item" href="about.html">About</a></p>
+        <p><a class="item" href="policy.html">Policy</a></p>
+        <p><a class="item" href="stories.html">Stories</a></p>
+        <p><a class="item" href="listing.html">List of Dogs</a></p>
+        <p><a class="item" href="listing.html">Details of Dog</a></p>
+        <p><a class="item" href="stories.html">Adoption Form</a></p>
     </div>
 </footer>
 
