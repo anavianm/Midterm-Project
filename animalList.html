@@ -106,7 +106,8 @@
 			<div class="back" id="back2">
 					<div class="container">
 						<h4><b>Quiet and shy but is active</b></h4> 
-						<p>Loves the snow</p> 
+						<p>Loves the snow</p>
+						<button type="button" class="adoptMe">Adopt Me</button>
 					</div>
 			</div>
 		</div>
@@ -122,7 +123,8 @@
 			<div class="back" id="back3">
 					<div class="container">
 						<h4><b>Loves long walks</b></h4> 
-						<p>Hates broccoli but will eat it for a treat</p> 
+						<p>Hates broccoli but will eat it for a treat</p>
+						<button type="button" class="adoptMe">Adopt Me</button>
 					</div>
 			</div>
 		</div>
@@ -141,6 +143,7 @@
 						<div class="container">
 							<h4><b>Loves hiking and the outdoors</b></h4> 
 							<p>Will pretend like shes still a puppy</p> 
+							<button type="button" class="adoptMe">Adopt Me</button>
 						</div>
 				</div>
 		</div>
@@ -157,6 +160,7 @@
 						<div class="container">
 							<h4><b>Quiet and caring and becomes active at night</b></h4> 
 							<p>Loves bacon cheeseburgers as a special treat</p> 
+							<button type="button" class="adoptMe">Adopt Me</button>
 						</div>
 				</div>
 		</div>
@@ -173,6 +177,7 @@
 						<div class="container">
 							<h4><b>Cuddly and active at night</b></h4> 
 							<p>Loves chew toys</p> 
+							<button type="button" class="adoptMe">Adopt Me</button>
 						</div>
 				</div>
 		</div>
@@ -181,48 +186,51 @@
 	<div class="row1 hideme">
 		<div class="card" id="7">
 				<div class="front" id="front7">
-					<img src="labrador.jpg" alt="Avatar" style="width:100%">
+					<img src="persian.png" alt="Avatar" style="width:100%">
 						<div class="container">
-							<h1><b>Lisa</b></h1> 
-							<h3>Labrador</h3> 
+							<h1><b>Charley</b></h1> 
+							<h3>Persian Cat</h3> 
 						</div>
 				</div>
 				<div class="back" id="back7">
 						<div class="container">
-							<h4><b>Loves hiking and the outdoors</b></h4> 
-							<p>Will pretend like shes still a puppy</p> 
+							<h4><b>Loves salmon</b></h4> 
+							<p>Will go on walks like a dog</p> 
+							<button type="button" class="adoptMe">Adopt Me</button>
 						</div>
 				</div>
 		</div>
 		
 		<div class="card" id="8">
 				<div class="front" id="front8">
-					<img src="pug.jpg" alt="Avatar" style="width:100%">
+					<img src="maccaw.jpg" alt="Avatar" style="width:100%">
 						<div class="container">
-							<h1><b>Fluffy</b></h1> 
-							<h3>Pug</h3> 
+							<h1><b>Cindy</b></h1> 
+							<h3>MaCaw Parrot</h3> 
 						</div>
 				</div>
 				<div class="back" id="back8">
 						<div class="container">
-							<h4><b>Quiet and caring and becomes active at night</b></h4> 
-							<p>Loves bacon cheeseburgers as a special treat</p> 
+							<h4><b>Very quiet and solemn. </b></h4> 
+							<p>Will sit on your shoulder like you're a parrot</p> 
+							<button type="button" class="adoptMe">Adopt Me</button>
 						</div>
 				</div>
 		</div>
 		
 		<div class="card" id="9">
 				<div class="front" id="front9">
-					<img src="shiba.jpg" alt="Avatar" style="width:100%">
+					<img src="munchkin.jpg" alt="Avatar" style="width:100%">
 						<div class="container">
-							<h1><b>Samantha</b></h1> 
-							<h3>Shiba</h3> 
+							<h1><b>Tiny</b></h1> 
+							<h3>Munchkin Cat</h3> 
 						</div>
 				</div>
 				<div class="back" id="back9">
 						<div class="container">
-							<h4><b>Cuddly and active at night</b></h4> 
-							<p>Loves chew toys</p> 
+							<h4><b>Loves to jump</b></h4> 
+							<p>Prefers white fish over salmon</p> 
+							<button type="button" class="adoptMe">Adopt Me</button>
 						</div>
 				</div>
 		</div>
@@ -241,6 +249,7 @@
 						<div class="container">
 							<h4><b>Loves people and running</b></h4> 
 							<p>She gets lost alot</p> 
+							<button type="button" class="adoptMe">Adopt Me</button>
 						</div>
 				</div>
 		</div>
@@ -257,6 +266,7 @@
 						<div class="container">
 							<h4><b>Old but still loveable</b></h4> 
 							<p>She likes to eat anything and everything!</p> 
+							<button type="button" class="adoptMe">Adopt Me</button>
 						</div>
 				</div>
 		</div>
@@ -273,6 +283,7 @@
 						<div class="container">
 							<h4><b>Mogu Mogu she loves to eat!</b></h4> 
 							<p>Very active and does not like leashes</p> 
+							<button type="button" class="adoptMe">Adopt Me</button>
 						</div>
 				</div>
 		</div>
@@ -284,7 +295,6 @@
 		var $front = "#front";
 		var $back = "#back";
 		
-		$(document).ready(function(){
 			for(var i = 1; i < 13; i++ ){
 				$($id + i).flip({
 					front: $front + i,
@@ -293,10 +303,9 @@
 					reverse: true, 
 					autoSize: true,
 					forceHeight: true
-				})
+				});
 			}
 			
-		})
 
 		$(document).ready(function() {
 			$(window).scroll( function(){
