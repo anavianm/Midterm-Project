@@ -3,8 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>Form Page</title>
+	
+	<link href="style.css" rel="stylesheet">
+	  
     <style type="text/css">
-    body{padding:5%}
+/*    body{padding:5%}*/
     form{padding:1%}
     input{border-radius: 4px; border:1px solid #d3d3d3;}
     input[type=moreinfo]{width:100%}
@@ -40,6 +43,17 @@
     </style>
   </head>
   <body>
+	  
+	  <header>
+		<nav class="navbar" id="nav">
+			<a class="siteName" href="index.html">HappyTails</a>
+			<a class="item" href="about.html">About</a>
+			<a class="item" href="animalList.html">Find a Dog</a>
+			<a class="item" href="Policy.html">Policy</a>
+			<a class="item" href="Success.html">Stories</a>
+		</nav>
+	</header>
+	  
       <img src = “dog_icon.png” alt width="72" height="72" />
       <h2>Adoption Form</h2>
       <p class="lead">
@@ -87,6 +101,18 @@
         <input type="submit" value="Submit">
         <input type="reset">
 </form>
+	  
+	  <footer>
+        <p>@Tufts COMP20 All rights reserved</p>
+        <div class="shortcut">
+            <p><a class="item" href="index.html">Home</a></p>
+            <p><a class="item" href="about.html">About</a></p>
+            <p><a class="item" href="Policy.html">Policy</a></p>
+            <p><a class="item" href="Success.html">Stories</a></p>
+            <p><a class="item" href="animalList.html">List of Dogs</a></p>
+            <p><a class="item" href="animalList.html">Details of Dog</a></p>
+        </div>
+    </footer>
 
   </body>
 </html>
