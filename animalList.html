@@ -1,0 +1,356 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Adopt an Animal</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<script src="jquery-3.4.1.min.js"></script>
+<script src="jquery.flip.js"></script>
+<script src="https://unpkg.com/popmotion/dist/popmotion.global.min.js"></script>
+	
+<style>
+	
+	@import url(https://fonts.googleapis.com/css?family=Roboto:400,300);
+	
+	h1{
+		color:  #be7575;
+	}
+	
+	.row1{
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		width: 100%;
+		position: relative;
+	}
+	
+	.card {
+		margin-top: 20px;
+		margin-left: 10px;
+		margin-right: 10px;
+		float: left;
+		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+		transition: 0.3s;
+		width: 20%;
+		max-height: 500px;
+		background-color: #fff;
+/*		left: 305;*/
+		
+		
+	}
+
+	.card:hover {
+		box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+	}
+
+	.container {
+		padding: 2px 16px;
+	}
+	
+	.back{
+		background-color: #fff;
+	}
+	
+	.hideme{
+		opacity:0;
+	}
+	
+	.adoptMe{
+		background-color: #be7575;
+		border: none;
+		color: #fff;
+		padding: 15px 32px;
+		text-align: center;
+		text-decoration: none;
+		font-size: 16px;
+		display: inline-block;
+		position: absolute;
+		float: right;
+		bottom: 10px;
+		right: 10px;
+	}
+	
+</style>
+</head>
+
+<body>
+	
+	<header>
+		<nav class="navbar" id="nav">
+			<a class="siteName" href="index.html">HappyTails</a>
+			<a class="item" href="about.html">About</a>
+			<a class="item" href="animalList.html">Find a Dog</a>
+			<a class="item" href="Policy.html">Policy</a>
+			<a class="item" href="Success.html">Stories</a>
+		</nav>
+	</header>
+	
+	<div class="row1">
+		<div class="card" id="1">
+			<div class="front" id="front1">
+				<img src="goldenRetriever.jpeg" alt="Avatar" style="width:100%">
+					<div class="container">
+<!--					THis is the name-->
+						<h1><b>Lucy</b></h1> 
+<!--						This is the breed-->
+						<h3>Golden Retriever</h3> 
+					</div>
+			</div>
+			<div class="back" id="back1">
+					<div class="container">
+<!--						The tagline for reach -->
+						<h4><b>Fun and Lovable</b></h4> 
+<!--						personality feel free to add more <p>-->
+						<p>Loves chew toys</p> 
+						<button type="button" class="adoptMe"><a href="form_page.html">Adopt Me</a></button>
+					</div>
+			</div>
+		</div>
+
+		<div class="card" id="2">
+			<div class="front" id="front2">
+				<img src="beagle.jpg" alt="Avatar" style="width:100%">
+					<div class="container">
+						<h1><b>Henry</b></h1> 
+						<h3>Beagle</h3> 
+					</div>
+			</div>
+			<div class="back" id="back2">
+					<div class="container">
+						<h4><b>Quiet and shy but is active</b></h4> 
+						<p>Loves the snow</p>
+						<button type="button" class="adoptMe">Adopt Me</button>
+					</div>
+			</div>
+		</div>
+		
+		<div class="card" id="3">
+			<div class="front" id="front3">
+				<img src="poodle.jpg" alt="Avatar" style="width:100%">
+					<div class="container">
+						<h1><b>Teddy</b></h1> 
+						<h3>Poodle</h3> 
+					</div>
+			</div>
+			<div class="back" id="back3">
+					<div class="container">
+						<h4><b>Loves long walks</b></h4> 
+						<p>Hates broccoli but will eat it for a treat</p>
+						<button type="button" class="adoptMe">Adopt Me</button>
+					</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="row1">
+		<div class="card" id="4">
+				<div class="front" id="front4">
+					<img src="labrador.jpg" alt="Avatar" style="width:100%">
+						<div class="container">
+							<h1><b>Lisa</b></h1> 
+							<h3>Labrador</h3> 
+						</div>
+				</div>
+				<div class="back" id="back4">
+						<div class="container">
+							<h4><b>Loves hiking and the outdoors</b></h4> 
+							<p>Will pretend like shes still a puppy</p> 
+							<button type="button" class="adoptMe">Adopt Me</button>
+						</div>
+				</div>
+		</div>
+		
+		<div class="card" id="5">
+				<div class="front" id="front5">
+					<img src="pug.jpg" alt="Avatar" style="width:100%">
+						<div class="container">
+							<h1><b>Fluffy</b></h1> 
+							<h3>Pug</h3> 
+						</div>
+				</div>
+				<div class="back" id="back5">
+						<div class="container">
+							<h4><b>Quiet and caring and becomes active at night</b></h4> 
+							<p>Loves bacon cheeseburgers as a special treat</p> 
+							<button type="button" class="adoptMe">Adopt Me</button>
+						</div>
+				</div>
+		</div>
+		
+		<div class="card" id="6">
+				<div class="front" id="front6">
+					<img src="shiba.jpg" alt="Avatar" style="width:100%">
+						<div class="container">
+							<h1><b>Samantha</b></h1> 
+							<h3>Shiba</h3> 
+						</div>
+				</div>
+				<div class="back" id="back6">
+						<div class="container">
+							<h4><b>Cuddly and active at night</b></h4> 
+							<p>Loves chew toys</p> 
+							<button type="button" class="adoptMe">Adopt Me</button>
+						</div>
+				</div>
+		</div>
+	</div>
+	
+	<div class="row1 hideme">
+		<div class="card" id="7">
+				<div class="front" id="front7">
+					<img src="persian.png" alt="Avatar" style="width:100%">
+						<div class="container">
+							<h1><b>Charley</b></h1> 
+							<h3>Persian Cat</h3> 
+						</div>
+				</div>
+				<div class="back" id="back7">
+						<div class="container">
+							<h4><b>Loves salmon</b></h4> 
+							<p>Will go on walks like a dog</p> 
+							<button type="button" class="adoptMe">Adopt Me</button>
+						</div>
+				</div>
+		</div>
+		
+		<div class="card" id="8">
+				<div class="front" id="front8">
+					<img src="maccaw.jpg" alt="Avatar" style="width:100%">
+						<div class="container">
+							<h1><b>Cindy</b></h1> 
+							<h3>MaCaw Parrot</h3> 
+						</div>
+				</div>
+				<div class="back" id="back8">
+						<div class="container">
+							<h4><b>Very quiet and solemn. </b></h4> 
+							<p>Will sit on your shoulder like you're a parrot</p> 
+							<button type="button" class="adoptMe">Adopt Me</button>
+						</div>
+				</div>
+		</div>
+		
+		<div class="card" id="9">
+				<div class="front" id="front9">
+					<img src="munchkin.jpg" alt="Avatar" style="width:100%">
+						<div class="container">
+							<h1><b>Tiny</b></h1> 
+							<h3>Munchkin Cat</h3> 
+						</div>
+				</div>
+				<div class="back" id="back9">
+						<div class="container">
+							<h4><b>Loves to jump</b></h4> 
+							<p>Prefers white fish over salmon</p> 
+							<button type="button" class="adoptMe">Adopt Me</button>
+						</div>
+				</div>
+		</div>
+	</div>
+	
+	<div class="row1 hideme">
+		<div class="card" id="10">
+				<div class="front" id="front10">
+					<img src="chocola.jpg" alt="Avatar" style="width:100%">
+						<div class="container">
+							<h1><b>Chocola</b></h1> 
+							<h3>Toy Poodle</h3> 
+						</div>
+				</div>
+				<div class="back" id="back10">
+						<div class="container">
+							<h4><b>Loves people and running</b></h4> 
+							<p>She gets lost alot</p> 
+							<button type="button" class="adoptMe">Adopt Me</button>
+						</div>
+				</div>
+		</div>
+		
+		<div class="card" id="11">
+				<div class="front" id="front11">
+					<img src="dambo.jpg" alt="Avatar" style="width:100%">
+						<div class="container">
+							<h1><b>Dambo</b></h1> 
+							<h3>Miniature Dachshund</h3> 
+						</div>
+				</div>
+				<div class="back" id="back11">
+						<div class="container">
+							<h4><b>Old but still loveable</b></h4> 
+							<p>She likes to eat anything and everything!</p> 
+							<button type="button" class="adoptMe">Adopt Me</button>
+						</div>
+				</div>
+		</div>
+		
+		<div class="card" id="12">
+				<div class="front" id="front12">
+					<img src="mogu.jpg" alt="Avatar" style="width:100%">
+						<div class="container">
+							<h1><b>Mogu</b></h1> 
+							<h3>Yorkshire Terrier</h3> 
+						</div>
+				</div>
+				<div class="back" id="back12">
+						<div class="container">
+							<h4><b>Mogu Mogu she loves to eat!</b></h4> 
+							<p>Very active and does not like leashes</p> 
+							<button type="button" class="adoptMe">Adopt Me</button>
+						</div>
+				</div>
+		</div>
+	</div>
+	
+	
+	<script language="javascript">
+		var $id = "#";
+		var $front = "#front";
+		var $back = "#back";
+		
+			for(var i = 1; i < 13; i++ ){
+				$($id + i).flip({
+					front: $front + i,
+					back: $back + i,
+					trigger: 'hover',
+					reverse: true, 
+					autoSize: true,
+					forceHeight: true
+				});
+			}
+			
+
+		$(document).ready(function() {
+			$(window).scroll( function(){
+				$('.hideme').each( function(i){
+            
+					var bottom_of_object = ($(this).offset().top + $(this).outerHeight())/1.4;
+					var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+					if( bottom_of_window > bottom_of_object ){
+						$(this).animate({'opacity':'1'},1000);
+					}
+				}); 
+			});
+		});
+		
+		
+		
+		
+		
+	</script>
+	
+	<footer>
+        <p>@Tufts COMP20 All rights reserved</p>
+        <div class="shortcut">
+            <p><a class="item" href="index.html">Home</a></p>
+            <p><a class="item" href="about.html">About</a></p>
+            <p><a class="item" href="Policy.html">Policy</a></p>
+            <p><a class="item" href="Success.html">Stories</a></p>
+            <p><a class="item" href="animalList.html">List of Dogs</a></p>
+            <p><a class="item" href="animalList.html">Details of Dog</a></p>
+			<p><a class="item" href="form_page.html">Adoption Form</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>
