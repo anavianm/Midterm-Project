@@ -50,8 +50,12 @@ body {
     width: 100%;
 }
 
-h1 {
+cover h1 {
     font-size: 62px;
+}
+
+h1 {
+    font-size: 52px;
 }
 
 h2 {
