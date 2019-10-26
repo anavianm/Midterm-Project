@@ -8,6 +8,11 @@ body,html {
             font-family: 'Roboto', arial, helvetica, sans-serif;
         }
 
+		a{
+			text-decoration: none;
+			color: #fff
+		}
+
         .main {
             text-align: center; 
             width:100%;
