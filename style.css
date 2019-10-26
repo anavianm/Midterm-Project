@@ -112,6 +112,10 @@ footer p {
     border-radius: 30px;
 }
 
+.button-small:hover {
+    background-color: #965529;
+}
+
 .button-smallest {
     background-color: #c47845;
     border: none;
