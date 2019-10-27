@@ -118,13 +118,35 @@ footer p {
     width: 50%;
     border-radius: 30px;
 }
+.button-small-reset {
+    background-color: #c43345;
+    border: none;
+    color: #ffffff;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    margin: auto;
+    cursor: pointer;
+    /* letter-spacing: 1px; */
+    /* text-transform: uppercase; */
+    display: block;
+    text-align: center;
+    width: 25%;
+    border-radius: 30px;
+}
 
 .button-small:hover {
     background-color: #965529;
 }
 
+.button-small-reset:hover {
+    background-color: #c63479;
+}
+
 .button-smallest {
-    background-color: #c47845;
+    background-color: #c46845;
     border: none;
     color: #ffffff;
     padding: 10px 15px;
@@ -143,7 +165,7 @@ footer p {
 }
 
 .button-smallest:hover {
-    background-color: #965529;
+    background-color: #965540;
 }
 
 .left {
