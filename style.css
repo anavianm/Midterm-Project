@@ -115,8 +115,6 @@ footer p {
     font-size: 1rem;
     margin: auto;
     cursor: pointer;
-    /* letter-spacing: 1px; */
-    /* text-transform: uppercase; */
     display: block;
     text-align: center;
     width: 50%;
@@ -138,8 +136,6 @@ footer p {
     font-size: 1rem;
     margin: auto;
     cursor: pointer;
-    /* letter-spacing: 1px; */
-    /* text-transform: uppercase; */
     display: block;
     text-align: center;
     width: 50%;
@@ -238,8 +234,50 @@ footer a:hover {
     width: 120%;
 }
 
+.navbar {
+    overflow: hidden;
+    background-color: #FAE0B7;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    z-index: 1;
+}
+
+.navbar a {
+    text-align: center;
+    color: #c47845;
+    text-decoration: none;
+    padding: 20px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #965529;
+}
+
+.navbar #active {
+    color: #965529;
+}
+
+.navbar .siteName {
+    text-align: left;
+    color: #965529;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.navbar a.icon {
+    display: none;
+}
+
+.image-circle {
+    clip-path: circle(50% at center);
+}
+
 /* responsive design */
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 600px) {
     /* mobile */
     .container {padding: 10%;}
     .column-two {flex: 0 0 100%; text-align: center;}
@@ -251,9 +289,16 @@ footer a:hover {
     .cover {height: auto;}
     .left {margin: auto;}
     .wrapper-icon img {width: 40%;}
+    .navbar .siteName {float: left; display: block;}
+    .navbar .a {float: left; display: block;}
+    .navbar a:not(:first-child) {display:none;}
+    .navbar a.icon {float: right; display: block;}
+    .navbar.responsive {position: relative; background-color: #333;}
+    .navbar.responsive a.item {float: none; display: block; text-align: left;}
+    .navbar.responsive a.icon {float: right; display: block; position: absolute; right: 0; top: 20px;}
 }
 
-@media only screen and (min-width: 401px) and (max-width: 960px) {
+@media only screen and (min-width: 601px) and (max-width: 960px) {
     /* tablet */
     .container {padding: 10%;}
     .column-two {flex: 0 0 100%; text-align: center;}
@@ -269,68 +314,4 @@ footer a:hover {
 
 @media only screen and (min-width: 961px) {
     /* desktop */
-}
-
-/* navigation bar */
-.navbar {
-    overflow: hidden;
-    background-color: #FAE0B7;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    padding: 15px 0;
-    text-align: center;
-    z-index: 1;
-}
-
-#nav a {
-    color: #c47845;
-    text-decoration: none;
-    padding: 20px;
-    transition: 0.3s;
-}
-
-#nav a:after{
-    background: none repeat scroll 0 0 transparent;
-    bottom: 0;
-    content: "";
-    display: block;
-    height: 2px;
-    left: 50%;
-    position: absolute;
-    /* background-color: #f6ad7b; */
-    transition: 0.3s;
-    width: 0;
-}
-
-#nav a:hover {
-    color: #965529;
-    padding-bottom: 14px;
-    width: 50%; 
-}
-
-#nav #active {
-    color: #965529;
-    border-bottom: 3px solid #965529;
-    padding-bottom: 14px;
-    width: 50%;
-}
-
-#nav .siteName {
-    text-align: left;
-    color: #965529;
-    font-weight: 900;
-    font-size: 20px;
-}
-
-#nav ul {
-    list-style-type: none;
-}
-
-#nav ul li {
-    display: inline-block;
-}
-
-.image-circle {
-    clip-path: circle(50% at center);
 }
