@@ -29,14 +29,15 @@
     .column_dif{
       flex:30%;
       float:left;
-      padding:5%;
+      left-padding:5%;
+      right-padding:5%;
       width: 33%;
       border-radius: 4px;
       background-color:#f2eee5;
 
     }
     .top_container {
-      padding-top: 5%;
+      padding-top: 10%;
       padding-bottom: 5%;
     }
     .lead{
@@ -71,6 +72,16 @@
         crossorigin="anonymous">
     </script>
     </style>
+    <script>
+    function validateForm() {
+      var x = document.forms["myForm"]["fname"].value;
+      if (x == "") {
+        alert("Name must be filled out");
+        return false;
+      }
+    }
+    </script>
+</script>
   </head>
   <body>
 	  <header>
@@ -89,13 +100,13 @@
       </p>
     </div>
 
-    <form class="form_class">
+    <form name="myForm" class = "form_class" onsubmit="return validateForm()">
         <div class="owner_form">
             <h4>Your Info</h4>
             <div class="row">
               <div class="column">
-                <input type="text" name="fname" placeholder="First name"><br><br>
-                <input type="text" name="email" placeholder="Email"><br>
+                <input type="text" name="fname" placeholder="First name" ><br><br>
+                <input type="text" name="email" placeholder="Email" ><br>
                 <br>Country:<br>
                 <select>
                   <option value="USA">United States</option>
@@ -105,8 +116,8 @@
                 </select><br>
           </div>
           <div class="column">
-            <input type="text" name="lname" placeholder="Last name"><br><br>
-            <input type="text" name="address" placeholder="Street Address"><br>
+            <input type="text" name="lname" placeholder="Last name" ><br><br>
+            <input type="text" name="address" placeholder="Street Address" ><br>
             <br>State:<br>
             <select>
                 <option value="Mass">Massachusetts</option>
@@ -117,9 +128,9 @@
           </div>
           <div class="column_dif">
             What type of owner are you?<br>
-            <input type="radio" name="type" value="first" checked> First time owner<br>
-            <input type="radio" name="type" value="other"> Current owner<br>
-            <input type="radio" name="type" value="past"> Past owner<br>
+            <input type="radio" name="type" value="first" checked> First time<br>
+            <input type="radio" name="type" value="other"> Current<br>
+            <input type="radio" name="type" value="past"> Past<br>
           </div>
         </div>
         <br>
@@ -127,7 +138,7 @@
             <input type="checkbox" name="type" value="consent" checked> I consent to HappyTails performing a background check. <br>
        </div>
         <div class="dog_info">
-        <h4>Dog Info</h4>
+      <h4>Dog Info</h4>
         Please describe your motivation for adopting one of our dogs:<br><br>
         <textarea></textarea>
         <div class="button_container">
@@ -135,8 +146,8 @@
             <input type="submit" class="button-small" value="Submit" ><br>
       </div>
       </div>
-</form>
-	  
+</form> 
+
 	  <footer>
         <p>@Tufts COMP20 All rights reserved</p>
         <div class="shortcut">
