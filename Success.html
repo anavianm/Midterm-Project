@@ -96,8 +96,8 @@ h2 {
         Troy was adopted 3 years ago by his loving parents. They buy him lots of chew toys and he loves playing with the family's 7 year old boy. They are best friends and they're both good boys too!
       </div>
       <div id="buttons0" class="buttons">
-        <button><img id="like0" class="like" src="like.png"></button>
-        <button><img id="heart0" class="heart" src="heart.png"></button>
+        <button><img id="like0" class="like" src="assets/icon/like.png"></button>
+        <button><img id="heart0" class="heart" src="assets/icon/heart.png"></button>
       </div>
       <div id="clicked0" class="buttons"></div>
     </td>
@@ -110,11 +110,11 @@ h2 {
         <h2>
           Star
         </h2>
-        Star was adopted 2 months ago and is now spending her days enjoying life and staying active with her owner. They garticipate in dog shows together and Star has already won two contests!
+        Star was adopted 2 months ago and is now spending her days enjoying life and staying active with her owner. They participate in dog contests together and Star has already won two of them!
       </div>
       <div id="buttons1" class="buttons">
-        <button><img id="like1" class="like" src="like.png"></button>
-        <button><img id="heart1" class="heart" src="heart.png"></button>
+        <button><img id="like1" class="like" src="assets/icon/like.png"></button>
+        <button><img id="heart1" class="heart" src="assets/icon/heart.png"></button>
       </div>
       <div id="clicked1" class="buttons"></div>
     </td>
@@ -130,8 +130,8 @@ h2 {
         Bubbles was adopted 2 weeks ago. She's still adjusting to her new family, but she quickly became friends with their 4 year old daughter and is getting used to the rest of the family too!
       </div>
       <div id="buttons2"class="buttons">
-        <button><img id="like2" class="like" src="like.png"></button>
-        <button><img id="heart2" class="heart" src="heart.png"></button>
+        <button><img id="like2" class="like" src="assets/icon/like.png"></button>
+        <button><img id="heart2" class="heart" src="assets/icon/heart.png"></button>
       </div>
       <div id="clicked2" class="buttons"></div>
     </td>
@@ -149,8 +149,8 @@ h2 {
         Shay was adopted 8 months ago and loves his new owner. They love to take walks, play fetch, and hang out at the park. The two of them are best friends!
       </div>
       <div id="buttons3" class="buttons">
-        <button><img id="like3" class="like" src="like.png"></button>
-        <button><img id="heart3" class="heart" src="heart.png"></button>
+        <button><img id="like3" class="like" src="assets/icon/like.png"></button>
+        <button><img id="heart3" class="heart" src="assets/icon/heart.png"></button>
       </div>
       <div id="clicked3" class="buttons"></div>
    </td>
@@ -165,8 +165,8 @@ h2 {
         Bobby was adopted 5 years ago when he was just a small pup. Now he is all grown up and loves to play with his family's 4 year old son. Bobby is his favorite babysitter!
       </div>
       <div id="buttons4" class="buttons">
-        <button><img id="like4" class="like" src="like.png"></button>
-        <button><img id="heart4" class="heart" src="heart.png"></button>
+        <button><img id="like4" class="like" src="assets/icon/like.png"></button>
+        <button><img id="heart4" class="heart" src="assets/icon/heart.png"></button>
       </div>
       <div id="clicked4" class="buttons"></div>
     </td>
@@ -182,15 +182,95 @@ h2 {
         Carly was adopted 6 months ago and is now living in a large house with plenty of toys for her to play with. She enjoys snuggling and has a big fluffy bed all to herself.
       </div>
       <div id="buttons5" class="buttons">
-        <button><img id="like5" class="like" src="like.png"></button>
-        <button><img id="heart5" class="heart" src="heart.png"></button>
+        <button><img id="like5" class="like" src="assets/icon/like.png"></button>
+        <button><img id="heart5" class="heart" src="assets/icon/heart.png"></button>
       </div>
       <div id="clicked5" class="buttons"></div>
     </td>
   </tr>
 </table>
 
+    <script type="text/javascript">
 
+      $('document').ready(function(){
+        //Like Button
+        $('#like0').click(function() {
+          $('#buttons0').fadeOut(250);
+          $('#clicked0').html('<button><img id="like0" class="like" src="assets/icon/like.png"></button><span class="like" style="color: #1a75ff"> Liked</span>');
+          $('#clicked0').hide(0);
+          $('#clicked0').delay(250).fadeIn(250);
+        });
+        $('#like1').click(function() {
+          $('#buttons1').fadeOut(250);
+          $('#clicked1').html('<button><img id="like1" class="like" src="assets/icon/like.png"></button><span class="like" style="color: #1a75ff"> Liked</span>');
+          $('#clicked1').hide(0);
+          $('#clicked1').delay(250).fadeIn(250);
+        });
+        $('#like2').click(function() {
+          $('#buttons2').fadeOut(250);
+          $('#clicked2').html('<button><img id="like2" class="like" src="assets/icon/like.png"></button><span class="like" style="color: #1a75ff"> Liked</span>');
+          $('#clicked2').hide(0);
+          $('#clicked2').delay(250).fadeIn(250);
+        });
+        $('#like3').click(function() {
+          $('#buttons3').fadeOut(250);
+          $('#clicked3').html('<button><img id="like3" class="like" src="assets/icon/like.png"></button><span class="like" style="color: #1a75ff"> Liked</span>');
+          $('#clicked3').hide(0);
+          $('#clicked3').delay(250).fadeIn(250);
+        });
+        $('#like4').click(function() {
+          $('#buttons4').fadeOut(250);
+          $('#clicked4').html('<button><img id="like4" class="like" src="assets/icon/like.png"></button><span class="like" style="color: #1a75ff"> Liked</span>');
+          $('#clicked4').hide(0);
+          $('#clicked4').delay(250).fadeIn(250);
+        });
+        $('#like5').click(function() {
+          $('#buttons5').fadeOut(250);
+          $('#clicked5').html('<button><img id="like5" class="like" src="assets/icon/like.png"></button><span class="like" style="color: #1a75ff"> Liked</span>');
+          $('#clicked5').hide(0);
+          $('#clicked5').delay(250).fadeIn(250);
+        });
+
+        //Love Button
+        $('#heart0').click(function() {
+          $('#buttons0').fadeOut(250);
+          $('#clicked0').html('<button><img id="heart0" class="heart" src="assets/icon/heart.png"></button><span class="heart" style="color: #ff3333"> Loved</span>');
+          $('#clicked0').hide(0);
+          $('#clicked0').delay(250).fadeIn(250);
+        });
+        $('#heart1').click(function() {
+          $('#buttons1').fadeOut(250);
+          $('#clicked1').html('<button><img id="heart1" class="heart" src="assets/icon/heart.png"></button><span class="heart" style="color: #ff3333"> Loved</span>');
+          $('#clicked1').hide(0);
+          $('#clicked1').delay(250).fadeIn(250);
+        });
+        $('#heart2').click(function() {
+          $('#buttons2').fadeOut(250);
+          $('#clicked2').html('<button><img id="heart2" class="heart" src="assets/icon/heart.png"></button><span class="heart" style="color: #ff3333"> Loved</span>');
+          $('#clicked2').hide(0);
+          $('#clicked2').delay(250).fadeIn(250);
+        });
+        $('#heart3').click(function() {
+          $('#buttons3').fadeOut(250);
+          $('#clicked3').html('<button><img id="heart2" class="heart" src="assets/icon/heart.png"></button><span class="heart" style="color: #ff3333"> Loved</span>');
+          $('#clicked3').hide(0);
+          $('#clicked3').delay(250).fadeIn(250);
+        });
+        $('#heart4').click(function() {
+          $('#buttons4').fadeOut(250);
+          $('#clicked4').html('<button><img id="heart2" class="heart" src="assets/icon/heart.png"></button><span class="heart" style="color: #ff3333"> Loved</span>');
+          $('#clicked4').hide(0);
+          $('#clicked4').delay(250).fadeIn(250);
+        });
+        $('#heart5').click(function() {
+          $('#buttons5').fadeOut(250);
+          $('#clicked5').html('<button><img id="heart2" class="heart" src="assets/icon/heart.png"></button><span class="heart" style="color: #ff3333"> Loved</span>');
+          $('#clicked5').hide(0);
+          $('#clicked5').delay(250).fadeIn(250);
+        });
+      });
+
+    </script>
     <footer>
         <p>@Tufts COMP20 All rights reserved</p>
         <div class="shortcut">
@@ -199,93 +279,11 @@ h2 {
             <p><a class="item" href="Policy.html">Policy</a></p>
             <p><a class="item" href="Success.html">Stories</a></p>
             <p><a class="item" href="animalList.html">List of Dogs</a></p>
-            <p><a class="item" href="animalList.html">Details of Dog</a></p>
-            <p><a class="item" href="form_page.html">Adoption Form</a></p>
             <p><a class="item" href="Resources.html">Resources</a></p>
         </div>
     </footer>
 
-    <script type="text/javascript">
 
-      $('document').ready(function(){
-        //Like Button
-        $('#like0').click(function() {
-          $('#buttons0').fadeOut(250);
-          $('#clicked0').html('<button><img id="like0" class="like" src="like.png"></button><span class="like" style="color: #1a75ff"> Liked</span>');
-          $('#clicked0').hide(0);
-          $('#clicked0').delay(250).fadeIn(250);
-        });
-        $('#like1').click(function() {
-          $('#buttons1').fadeOut(250);
-          $('#clicked1').html('<button><img id="like1" class="like" src="like.png"></button><span class="like" style="color: #1a75ff"> Liked</span>');
-          $('#clicked1').hide(0);
-          $('#clicked1').delay(250).fadeIn(250);
-        });
-        $('#like2').click(function() {
-          $('#buttons2').fadeOut(250);
-          $('#clicked2').html('<button><img id="like2" class="like" src="like.png"></button><span class="like" style="color: #1a75ff"> Liked</span>');
-          $('#clicked2').hide(0);
-          $('#clicked2').delay(250).fadeIn(250);
-        });
-        $('#like3').click(function() {
-          $('#buttons3').fadeOut(250);
-          $('#clicked3').html('<button><img id="like3" class="like" src="like.png"></button><span class="like" style="color: #1a75ff"> Liked</span>');
-          $('#clicked3').hide(0);
-          $('#clicked3').delay(250).fadeIn(250);
-        });
-        $('#like4').click(function() {
-          $('#buttons4').fadeOut(250);
-          $('#clicked4').html('<button><img id="like4" class="like" src="like.png"></button><span class="like" style="color: #1a75ff"> Liked</span>');
-          $('#clicked4').hide(0);
-          $('#clicked4').delay(250).fadeIn(250);
-        });
-        $('#like5').click(function() {
-          $('#buttons5').fadeOut(250);
-          $('#clicked5').html('<button><img id="like5" class="like" src="like.png"></button><span class="like" style="color: #1a75ff"> Liked</span>');
-          $('#clicked5').hide(0);
-          $('#clicked5').delay(250).fadeIn(250);
-        });
-
-        //Love Button
-        $('#heart0').click(function() {
-          $('#buttons0').fadeOut(250);
-          $('#clicked0').html('<button><img id="heart0" class="heart" src="heart.png"></button><span class="heart" style="color: #ff3333"> Loved</span>');
-          $('#clicked0').hide(0);
-          $('#clicked0').delay(250).fadeIn(250);
-        });
-        $('#heart1').click(function() {
-          $('#buttons1').fadeOut(250);
-          $('#clicked1').html('<button><img id="heart1" class="heart" src="heart.png"></button><span class="heart" style="color: #ff3333"> Loved</span>');
-          $('#clicked1').hide(0);
-          $('#clicked1').delay(250).fadeIn(250);
-        });
-        $('#heart2').click(function() {
-          $('#buttons2').fadeOut(250);
-          $('#clicked2').html('<button><img id="heart2" class="heart" src="heart.png"></button><span class="heart" style="color: #ff3333"> Loved</span>');
-          $('#clicked2').hide(0);
-          $('#clicked2').delay(250).fadeIn(250);
-        });
-        $('#heart3').click(function() {
-          $('#buttons3').fadeOut(250);
-          $('#clicked3').html('<button><img id="heart2" class="heart" src="heart.png"></button><span class="heart" style="color: #ff3333"> Loved</span>');
-          $('#clicked3').hide(0);
-          $('#clicked3').delay(250).fadeIn(250);
-        });
-        $('#heart4').click(function() {
-          $('#buttons4').fadeOut(250);
-          $('#clicked4').html('<button><img id="heart2" class="heart" src="heart.png"></button><span class="heart" style="color: #ff3333"> Loved</span>');
-          $('#clicked4').hide(0);
-          $('#clicked4').delay(250).fadeIn(250);
-        });
-        $('#heart5').click(function() {
-          $('#buttons5').fadeOut(250);
-          $('#clicked5').html('<button><img id="heart2" class="heart" src="heart.png"></button><span class="heart" style="color: #ff3333"> Loved</span>');
-          $('#clicked5').hide(0);
-          $('#clicked5').delay(250).fadeIn(250);
-        });
-      });
-
-    </script>
 
 </body>
 </html>
