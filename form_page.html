@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Form Page</title>
-	  <link href="style.css" rel="stylesheet">  
+	  <link href="style.css" rel="stylesheet">
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style type="text/css">
     form{padding:1%}
     input[type=text]{border-radius: 4px; border:1px solid #d3d3d3; height: 15%; width: 70%; background-color:#f2eee5;}
@@ -29,14 +30,14 @@
     .column_dif{
       flex:30%;
       float:left;
-      padding:5%;
+      padding:1%;
       width: 33%;
       border-radius: 4px;
       background-color:#f2eee5;
 
     }
     .top_container {
-      padding-top: 5%;
+      padding-top: 10%;
       padding-bottom: 5%;
     }
     .lead{
@@ -50,7 +51,7 @@
       padding-left: 10%;
       padding-right: 10%;
       background-color:#f6ad7b ;
-      border-radius: 20px
+      border-radius: 75px
     }
     .header_form_sec{
       display: flex;
@@ -71,17 +72,31 @@
         crossorigin="anonymous">
     </script>
     </style>
+    <script>
+    function validateForm() {
+      var x = document.forms["myForm"]["fname"].value;
+      if (x == "") {
+        alert("Name must be filled out");
+        return false;
+      }
+    }
+    </script>
+</script>
   </head>
   <body>
-	  <header>
-		<nav class="navbar" id="nav">
-			<a class="siteName" href="index.html">HappyTails</a>
-			<a class="item" href="about.html">About</a>
-			<a class="item" href="animalList.html">Find a Dog</a>
-			<a class="item" href="Policy.html">Policy</a>
-			<a class="item" href="Success.html">Stories</a>
-		</nav>
-	</header>
+<header>
+    <nav class="navbar" id="nav">
+        <a class="item siteName" href="index.html">HappyTails</a>
+        <a class="item" href="about.html">About</a>
+        <a class="item" href="animalList.html">Find a Dog</a>
+        <a class="item" href="Policy.html">Policy</a>
+        <a class="item" href="Success.html">Stories</a>
+		<a class="item" href="Resources.html">Resources</a>
+        <a class="item icon" href="javascript:void(0);" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </nav>
+</header>
 	  <div class="top_container">
       <h2>Adoption Form</h2>
       <p class="lead">
@@ -89,13 +104,13 @@
       </p>
     </div>
 
-    <form class="form_class">
+    <form name="myForm" class = "form_class" onsubmit="return validateForm()">
         <div class="owner_form">
             <h4>Your Info</h4>
             <div class="row">
               <div class="column">
-                <input type="text" name="fname" placeholder="First name"><br><br>
-                <input type="text" name="email" placeholder="Email"><br>
+                <input type="text" name="fname" placeholder="First name" ><br><br>
+                <input type="text" name="email" placeholder="Email" ><br>
                 <br>Country:<br>
                 <select>
                   <option value="USA">United States</option>
@@ -105,8 +120,8 @@
                 </select><br>
           </div>
           <div class="column">
-            <input type="text" name="lname" placeholder="Last name"><br><br>
-            <input type="text" name="address" placeholder="Street Address"><br>
+            <input type="text" name="lname" placeholder="Last name" ><br><br>
+            <input type="text" name="address" placeholder="Street Address" ><br>
             <br>State:<br>
             <select>
                 <option value="Mass">Massachusetts</option>
@@ -116,10 +131,10 @@
             </select><br>
           </div>
           <div class="column_dif">
-            What type of owner are you?<br>
-            <input type="radio" name="type" value="first" checked> First time owner<br>
-            <input type="radio" name="type" value="other"> Current owner<br>
-            <input type="radio" name="type" value="past"> Past owner<br>
+            What type of owner?<br>
+            <input type="radio" name="type" value="first" checked> First time<br>
+            <input type="radio" name="type" value="other"> Current<br>
+            <input type="radio" name="type" value="past"> Past<br>
           </div>
         </div>
         <br>
@@ -127,28 +142,40 @@
             <input type="checkbox" name="type" value="consent" checked> I consent to HappyTails performing a background check. <br>
        </div>
         <div class="dog_info">
-        <h4>Dog Info</h4>
+      <h4>Dog Info</h4>
         Please describe your motivation for adopting one of our dogs:<br><br>
         <textarea></textarea>
         <div class="button_container">
-            <input class="button-small" type="reset" >
+            <input class="button-small-reset" type="reset" >
             <input type="submit" class="button-small" value="Submit" ><br>
       </div>
       </div>
 </form>
-	  
+
 	  <footer>
         <p>@Tufts COMP20 All rights reserved</p>
         <div class="shortcut">
-            <p><a class="item" href="index.html">Home</a></p>
-            <p><a class="item" href="about.html">About</a></p>
-            <p><a class="item" href="Policy.html">Policy</a></p>
-            <p><a class="item" href="Success.html">Stories</a></p>
-            <p><a class="item" href="animalList.html">List of Dogs</a></p>
-            <p><a class="item" href="animalList.html">Details of Dog</a></p>
+           <p><a class="item" href="index.html">Home</a></p>
+			<p><a class="item" href="about.html">About</a></p>
+			<p><a class="item" href="Policy.html">Policy</a></p>
+			<p><a class="item" href="Success.html">Stories</a></p>
+			<p><a class="item" href="animalList.html">List of Dogs</a></p>
 			<p><a class="item" href="form_page.html">Adoption Form</a></p>
+			<p><a class="item" href="Resources.html">Resources</a></p>
+
         </div>
     </footer>
+	 
+	<script>
+		function myFunction() {
+			var x = document.getElementById("nav");
+			if (x.className === "navbar") {
+				x.className += " responsive";
+			} else {
+				x.className = "navbar";
+			}
+		}
+	  </script>
 
   </body>
 </html>
