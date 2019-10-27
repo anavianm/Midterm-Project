@@ -4,9 +4,11 @@
 <meta charset="utf-8">
 <title>Adopt an Animal</title>
 <link href="style.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="jquery-3.4.1.min.js"></script>
 <script src="jquery.flip.js"></script>
 <script src="https://unpkg.com/popmotion/dist/popmotion.global.min.js"></script>
+	
 
 <style>
 
@@ -147,17 +149,20 @@
 <body>
 
     <header>
-        <nav class="navbar" id="nav">
-            <a class="siteName" href="index.html">HappyTails</a>
-            <a class="item" href="about.html">About</a>
-            <a class="item" href="animalList.html">Find a Dog</a>
-            <a class="item" href="Policy.html">Policy</a>
-            <a class="item" href="Success.html">Stories</a>
-            <a class="item" href="Resources.html">Resources</a>
-        </nav>
-    </header>
+		<nav class="navbar" id="nav">
+			<a class="item siteName" href="index.html">HappyTails</a>
+			<a class="item" href="about.html">About</a>
+			<a class="item" id="active" href="animalList.html">Find a Dog</a>
+			<a class="item" href="Policy.html">Policy</a>
+			<a class="item" href="Success.html">Stories</a>
+			<a class="item" href="Resources.html">Resources</a>
+			<a class="item icon" href="javascript:void(0);" onclick="myFunction()">
+				<i class="fa fa-bars"></i>
+			</a>
+		</nav>
+	</header>
 
-	<div id="belowHeader">
+<!--	<div id="belowHeader">-->
 		<div class="row1">
 			<div class="card" id="1">
 				<div class="front" id="front1">
@@ -449,6 +454,16 @@
 				});
 			});
 		});
+		
+		function myFunction() {
+			var x = document.getElementById("nav");
+			if (x.className === "navbar") {
+				x.className += " responsive";
+			} else {
+				x.className = "navbar";
+			}
+		}
+
 
 
 
@@ -461,13 +476,14 @@
 	  <footer>
         <p>@Tufts COMP20 All rights reserved</p>
         <div class="shortcut">
-            <p><a class="item" href="index.html">Home</a></p>
-            <p><a class="item" href="about.html">About</a></p>
-            <p><a class="item" href="Policy.html">Policy</a></p>
-            <p><a class="item" href="Success.html">Stories</a></p>
-            <p><a class="item" href="animalList.html">List of Dogs</a></p>
-            <p><a class="item" href="Resources.html">Resources</a></p>
-        </div>
+             <p><a class="item" href="index.html">Home</a></p>
+			<p><a class="item" href="about.html">About</a></p>
+			<p><a class="item" href="Policy.html">Policy</a></p>
+			<p><a class="item" href="Success.html">Stories</a></p>
+			<p><a class="item" href="animalList.html">List of Dogs</a></p>
+			<p><a class="item" href="form_page.html">Adoption Form</a></p>
+			<p><a class="item" href="Resources.html">Resources</a></p>
+		  </div>
     </footer>
 
 </body>
