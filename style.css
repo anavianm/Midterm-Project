@@ -17,12 +17,14 @@ body {
     box-sizing: border-box;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
     display: flex;
     flex-direction: vertical;
     justify-content: center;
     margin: auto;
     vertical-align: middle;
+    
 }
 
 .first {
@@ -99,6 +101,7 @@ footer p {
 }
 .button:hover {
     background-color: #f5914e;
+    transition: 0.3s ease 0s, left 0.3s ease 0s;
 }
 
 .button-small {
@@ -207,26 +210,22 @@ footer a:hover {
     display:flex;
     -ms-flex-wrap:wrap;
     flex-wrap:wrap;
+    box-sizing: border-box;
 }
 
 .column-two {
-    -ms-flex:0 0 44%;
     flex:0 0 44%;
-    max-width: 44%;
     text-align: left;
     padding: 2%;
+    box-sizing: border-box;
 }
 
 .column-three {
-    -ms-flex:0 0 33.333333%;
     flex:0 0 33.333333%;
-    max-width:33.333333%;
 }
 
 .column-four {
-    -ms-flex:0 0 23%;
     flex:0 0 23%;
-    max-width: 23%;
     margin: 1%
 }
 
@@ -237,6 +236,39 @@ footer a:hover {
 .column-two img {
     margin: 0;
     width: 120%;
+}
+
+/* responsive design */
+@media only screen and (max-width: 400px) {
+    /* mobile */
+    .container {padding: 10%;}
+    .column-two {flex: 0 0 100%; text-align: center;}
+    .column-two img {width: 100%; }
+    .column-two .graphics {float: left;}
+    .column-three {flex: 0 0 100%;}
+    .column-four {flex: 0 0 100%; }
+    .column-four img {width: 80%;}
+    .cover {height: auto;}
+    .left {margin: auto;}
+    .wrapper-icon img {width: 40%;}
+}
+
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+    /* tablet */
+    .container {padding: 10%;}
+    .column-two {flex: 0 0 100%; text-align: center;}
+    .column-two img {width: 100%; }
+    .column-two .graphics {float: left;}
+    .column-three {flex: 0 0 100%;}
+    .column-four {flex: 0 0 100%; }
+    .column-four img {width: 40%;}
+    .wrapper-icon img {width: 25%;}
+    .cover {height: auto;}
+    .left {margin: auto;}
+}
+
+@media only screen and (min-width: 961px) {
+    /* desktop */
 }
 
 /* navigation bar */
@@ -267,7 +299,7 @@ footer a:hover {
     left: 50%;
     position: absolute;
     /* background-color: #f6ad7b; */
-    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    transition: 0.3s;
     width: 0;
 }
 
