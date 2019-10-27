@@ -5,6 +5,7 @@
     <meta name="author" content="Korri, Max, Hyejin, and Mitch">
     <title>Midterm Project</title>
     <link href="style.css" rel="stylesheet">
+ 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto|Poppins:400,500i,900i|VT323&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     
@@ -16,16 +17,19 @@
 </head>
 
 <body>
-<header>
-    <nav class="navbar" id="nav">
-        <a class="siteName" href="index.html">HappyTails</a>
-        <a class="item" href="about.html">About</a>
-        <a class="item" href="animalList.html">Find a Dog</a>
-        <a class="item" href="Policy.html">Policy</a>
-        <a class="item" href="Success.html">Stories</a>
-        <a class="item" href="Resources.html">Resources</a>
-    </nav>
-</header>
+    <header>
+		<nav class="navbar" id="nav">
+			<a class="item siteName" href="index.html">HappyTails</a>
+			<a class="item" href="about.html">About</a>
+			<a class="item" href="animalList.html">Find a Dog</a>
+			<a class="item" href="Policy.html">Policy</a>
+			<a class="item" href="Success.html">Stories</a>
+			<a class="item" id="active"  href="Resources.html">Resources</a>
+			<a class="item icon" href="javascript:void(0);" onclick="myFunction()">
+				<i class="fa fa-bars"></i>
+			</a>
+		</nav>
+	</header>
 
 
 
@@ -86,18 +90,31 @@
             <br><a href="https://services.petsmart.com/grooming" class="button">Grooming Services</a>
         </div>         
 </section>
+	
+	<script>
+		function myFunction() {
+			var x = document.getElementById("nav");
+			if (x.className === "navbar") {
+				x.className += " responsive";
+			} else {
+				x.className = "navbar";
+			}
+		}
+	  </script>
 
     <footer>
         <p>@Tufts COMP20 All rights reserved</p>
         <div class="shortcut">
-            <p><a class="item" href="index.html">Home</a></p>
-            <p><a class="item" href="about.html">About</a></p>
-            <p><a class="item" href="Policy.html">Policy</a></p>
-            <p><a class="item" href="Success.html">Stories</a></p>
-            <p><a class="item" href="animalList.html">List of Dogs</a></p>
-            <p><a class="item" href="Resources.html">Resources</a></p>
-        </div>
+             <p><a class="item" href="index.html">Home</a></p>
+			<p><a class="item" href="about.html">About</a></p>
+			<p><a class="item" href="Policy.html">Policy</a></p>
+			<p><a class="item" href="Success.html">Stories</a></p>
+			<p><a class="item" href="animalList.html">List of Dogs</a></p>
+			<p><a class="item" href="form_page.html">Adoption Form</a></p>
+			<p><a class="item" href="Resources.html">Resources</a></p>
+		</div>
     </footer>
+	
 
 </body>
 </html>
