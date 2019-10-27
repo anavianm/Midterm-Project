@@ -2,37 +2,38 @@
 <html>
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Korri, Max, Hyejin, and Mitch">
+
     <title>Midterm Project</title>
     <link href="style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto|Poppins:400,500i,900i|VT323&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <style>
-        
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <header>
-        <nav class="navbar" id="nav">
-            <a class="siteName" href="index.html">HappyTails</a>
-            <a class="item" href="about.html">About</a>
-            <a class="item" href="animalList.html">Find a Dog</a>
-            <a class="item" href="Policy.html">Policy</a>
-            <a class="item" href="Success.html">Stories</a>
-            <a class="item" href="Resources.html">Resources</a>
-        </nav>
-    </header>
+<header>
+    <nav class="navbar" id="nav">
+        <a class="item siteName" href="index.html">HappyTails</a>
+        <a class="item" href="about.html">About</a>
+        <a class="item" href="animalList.html">Find a Dog</a>
+        <a class="item" href="Policy.html">Policy</a>
+        <a class="item" href="Success.html">Stories</a>
+        <a class="item icon" href="javascript:void(0);" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </nav>
+</header>
 
-<!-- Main for a primary marketing message -->
 <section class="container cover salmon">
     <div class="row">
         <div class="column-two">
             <div class="wrapper">
                 <h1 class="cover-heading">Dogs Find Their People</h1>
-                <p class="description">Thousands of adoptable dogs are looking for people to care for them. Adopting, fostering and sponsoring can save lives.</p>
-                <br><a href="#whatToDo" class="button left">Adopt Now</a>
-            </div> 
+                <p class="description">Thousands of adoptable dogs are looking for people. Adopting, fostering and sponsorship save lives.</p>
+                <br><a href="animalList.html" class="button left">Adopt Now</a>
+            </div>
         </div>
         <div class="column-two">
             <img src="assets/img/puppy_fixed.gif" alt="Dog animation" />
@@ -41,15 +42,6 @@
     </div>
 </section>
 
-<!-- Previous version of main -->
-<!-- <section class="banner first">
-    <div class="wrapper">
-        <h1 class="cover-heading">Dogs Find Their People</h1>
-        <p class="description">Thousands of adoptable dogs are looking for people</p>
-        <br><a href="#whatToDo" class="button">How Can I Help Them?</a>
-    </div>  
-</section> -->
-
 <section class="banner first"></section>
 
 <section class="container white">
@@ -57,8 +49,8 @@
             <h2>HappyTails</h2>
             <p class="description">We rescue chained, penned, abused, and neglected dogs</p>
             <br><a href="about.html" class="button">More About Us</a>
-        </div> 
-        
+        </div>
+
 </section>
 
 <section class="banner second"></section>
@@ -69,9 +61,8 @@
             <div class="wrapper-icon">
                 <img src="assets/icon/policy.png" alt="Policy icon" />
                 <h3>How to Adopt</h3>
-                <p>Learn about our adoption policies</p>
-                <a href="Policy.html" class="button-smallest">See Policy</a>
-<!--                <div class="button-small">See Policy</div>-->
+                <p>Learn about policy for adoption</p>
+                <a href="Policy.html" class="button-small">See Policy</a>
             </div>
         </div>
         <div class="column-three">
@@ -79,17 +70,15 @@
                 <img src="assets/icon/find.png" alt="Finding icon" />
                 <h3>Finding a Dog</h3>
                 <p>See dogs available for adoption near you</p>
-        <a href="animalList.html" class="button-smallest">Meet Dogs in Need</a>
-<!--                <div class="button-small">Meet Dogs in Need</div>-->
+				<a href="animalList.html" class="button-small">Meet Dogs in Need</a>
             </div>
         </div>
         <div class="column-three">
             <div class="wrapper-icon">
                 <img src="assets/icon/story.png" alt="Story icon" />
-                <h3>Success Stories</h3>
-                <p>Check out our success stories</p>
-           <a href="Policy.html" class="button-smallest">See Stories</a>
-<!--                <div class="button-small">See Stories</div>-->
+                <h3>Successful Stories</h3>
+                <p>Check out successful stories</p>
+		        <a href="Policy.html" class="button-small">See Stories</a>
             </div>
         </div>
     </div>
@@ -106,6 +95,17 @@
         <p><a class="item" href="Resources.html">Resources</a></p>
     </div>
 </footer>
+
+<script>
+    function myFunction() {
+        var x = document.getElementById("nav");
+        if (x.className === "navbar") {
+        x.className += " responsive";
+        } else {
+        x.className = "navbar";
+        }
+    }
+</script>
 
 </body>
 </html>
