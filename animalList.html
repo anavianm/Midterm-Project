@@ -17,36 +17,24 @@
 
 
 <style>
-
 	@import url(https://fonts.googleapis.com/css?family=Roboto:400,300);
-
 /*
 	h1{
 		color:  #be7575;
 	}
 */
-
 	.row1{
 		padding: 5% 10%;
-
 	}
-
 	.card {
-
-
 		margin-bottom: 2em;
 		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 		transition: 0.3s;
 		background-color: #fff;
-
-
-
 	}
-
 	.card p{
 		font-size: 1.2em;
 	}
-
 	.cardSmaller {
 		height: auto;
 		margin-top: 20px;
@@ -59,31 +47,23 @@
 		max-height: 300px;
 		background-color: #fff;
 /*		left: 305;*/
-
-
 	}
-
 	.card:hover {
 		box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 	}
-
 /*
 	.container {
-
 	}
 */
 	.cardContainer{
 		padding: 2px 16px;
 	}
-
 	.back{
 		background-color: #fff;
 	}
-
 	.hideme{
 		opacity:0;
 	}
-
 	.adoptMe{
 /*		background-color: #be7575;*/
 /*		border: none;*/
@@ -98,11 +78,9 @@
 		bottom: 10px;
 		right: 10px;
 	}
-
 	.animalBanner{
 		background-image: url("assets/img/adoptImage.jpg");
 	}
-
 	.front{
 /*		display: flex !important;*/
 		background-color: #fff !important;
@@ -115,50 +93,38 @@
 /*		display: flex !important;*/
 /*		height: auto !important;*/
 	}
-
-
-
 	@media screen and (min-width: 20em) {
 		.row1 {
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: space-between;
 		}
-
 		.card {
 			max-height: 32em;
 /*			max-height: 500px;*/
 			flex: 0 1 calc(100% - 3em);
 		}
 	}
-
 	@media screen and (min-width: 40em) {
 		.row1 {
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: space-between;
 		}
-
 		.card {
 			max-height: 40em;
 			flex: 0 1 calc(50% - 1em);
-
 		}
 	}
-
 	@media screen and (min-width: 60em) {
-
 		.card {
 			max-height: 50em;
 			flex: 0 1 calc(30% - 1em);
-
 		}
 	}
-
 	p {
 		font-size: 1.5vw;
 	}
-
 </style>
 </head>
 
@@ -462,7 +428,6 @@
 		var $id = "#";
 		var $front = "#front";
 		var $back = "#back";
-
 			for(var i = 1; i < 13; i++ ){
 				$($id + i).flip({
 					front: $front + i,
@@ -473,22 +438,17 @@
 					forceHeight: true
 				});
 			}
-
-
 		$(document).ready(function() {
 			$(window).scroll( function(){
 				$('.hideme').each( function(i){
-
 					var bottom_of_object = ($(this).offset().top + $(this).outerHeight())/1.4;
 					var bottom_of_window = $(window).scrollTop() + $(window).height();
-
 					if( bottom_of_window > bottom_of_object ){
 						$(this).animate({'opacity':'1'},100);
 					}
 				});
 			});
 		});
-
 		function myFunction() {
 			var x = document.getElementById("nav");
 			if (x.className === "navbar") {
@@ -497,26 +457,16 @@
 				x.className = "navbar";
 			}
 		}
-
 		$(".button").click(function() {
     		$('html,body').animate({
        		 scrollTop: $(".row1").offset().top},
         	'slow');
 		});
-
 		$(".top").click(function() {
     		$('html,body').animate({
        		 scrollTop: $(".navbar").offset().top},
         	'slow');
 		});
-
-
-
-
-
-
-
-
 	</script>
 
 	  <footer>
