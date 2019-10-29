@@ -2,20 +2,20 @@
 Comp 20 Web Programming, Fall 2019 Midterm Project
 
 ## Team members & Roles
-*Hyejin Im
-    *Created the ‘Home’ page and ‘About’ page (HTML)
-    *Created the fixed page elements (navigation/header/footer)
-    • Designated role: Design - CSS style sheet and UX design
-*Korri Lampedusa
-  *Created the ‘Form’ page and ‘Policy’ page (HTML)
-  *Written document deliverables for project 
-  *Designated role: Product Manager - Team organization, goals, scheduling
-*Maxwell Anavian
-  *Created the ‘Find a Dog’ page (HTML)
-  *Designated role: Code - Github collaboration & merging, Jquery effects
-*Mitch Choi
-  *Created the ‘Success Stories’ page  and ‘Resources’ page (HTML)
-  *Designated role: Writing - Writing copy for pages, spelling/grammar check
+* Hyejin Im
+    * Created the ‘Home’ page and ‘About’ page (HTML)
+    * Created the fixed page elements (navigation/header/footer)
+    * Designated role: Design - CSS style sheet and UX design
+* Korri Lampedusa
+  * Created the ‘Form’ page and ‘Policy’ page (HTML)
+  * Written document deliverables for project 
+  * Designated role: Product Manager - Team organization, goals, scheduling
+* Maxwell Anavian
+  * Created the ‘Find a Dog’ page (HTML)
+  * Designated role: Code - Github collaboration & merging, Jquery effects
+* Mitch Choi
+  * Created the ‘Success Stories’ page  and ‘Resources’ page (HTML)
+  * Designated role: Writing - Writing copy for pages, spelling/grammar check
 
 ## HappyTails - About Business & Site
 The business **‘HappyTails’** is a fictional pet adoption agency that rescues caged and abused animals to connect them with new homes.  The business is located in North America and allows eligible prospective owners to apply online to begin the adoption process and view other essential information related to adopting a pet.
