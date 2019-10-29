@@ -296,7 +296,7 @@ footer a:hover {
 }
 
 /* responsive design */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
     /* mobile */
     .container {padding: 10%;}
     .column-two {flex: 0 0 100%; text-align: center;}
