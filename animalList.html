@@ -438,6 +438,8 @@
 					</div>
 <!--			</div>-->
 		</div>
+			
+		<br><a class="button top">back to top</a>
 
 	</div>
 	<script language="javascript">
@@ -483,6 +485,12 @@
 		$(".button").click(function() {
     		$('html,body').animate({
        		 scrollTop: $(".row1").offset().top},
+        	'slow');
+		});
+		
+		$(".top").click(function() {
+    		$('html,body').animate({
+       		 scrollTop: $(".navbar").offset().top},
         	'slow');
 		});
 		
