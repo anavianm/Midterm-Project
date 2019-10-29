@@ -10,167 +10,155 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto|Poppins:400,500i,900i|VT323&display=swap" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-<style>
-* {
-  box-sizing: border-box;
-}
+  <style>
+  * {
+    box-sizing: border-box;
+  }
 
 
-table {
-  margin: auto;
-  border-spacing: 2em;
-  width: 83%;
-}
+  table {
+    margin: auto;
+    border-spacing: 2em;
+    width: 83%;
+  }
 
-tr {
-  padding-top: 0em;
-}
+  tr {
+    padding-top: 0em;
+  }
 
-td {
-  width: 30%;
-  padding-top: 0em;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-}
+  td {
+    width: 30%;
+    padding-top: 0em;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
 
-.thumbnail img {
-  width: 100%;
-  padding-top: 0;
-  /* height: 12em; */
-}
+  .thumbnail img {
+    width: 100%;
+    padding-top: 0;
+   /* height: 12em; */
+  }
 
-.text {
-  padding: 1em;
-}
+  .text {
+    padding: 1em;
+  }
 
-.buttons{
-  padding-left: .5em;
-  padding-bottom: 1em;
-}
+  .buttons{
+   padding-left: .5em;
+   padding-bottom: 1em;
+  }
 
-button {
-  height: 2vw;
-  width: 2vw;
-  padding-right: 2vw;
-  border: none;
-  background-color: #fff;
-}
-
-
-.buttons img {
-  width: 2vw;
-  height: 2vw
-}
-/*
-
-.banner {
-  width: 100%;
-}
-*/
-
-.cards{
-	padding: 5% 10%;
-
-}
-
-.card {
-	background: white;
-	margin-bottom: 2em;
-	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-	transition: 0.3s;
-
-}
-
-.card:hover{
-	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
-.cardText{
-	padding: 14px;
-}
-
-.animalBanner{
-	background-image: url("assets/img/Image0.jpg");
-}
+  button {
+    height: 2vw;
+    width: 2vw;
+    padding-right: 2vw;
+    border: none;
+    background-color: #fff;
+  }
 
 
-@media screen and (min-width: 40em) {
-	.cards {
+  .buttons img {
+    width: 2vw;
+   height: 2vw
+  }
+
+  .cards{
+	 padding: 5% 10%;
+  }
+
+  .card {
+	 background: white;
+	 margin-bottom: 2em;
+	 box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	 transition: 0.3s;
+  }
+
+  .card:hover{
+	 box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+  .cardText{
+	 padding: 14px;
+  }
+
+  .animalBanner{
+	 background-image: url("assets/img/Image0.jpg");
+  }
+
+
+  @media screen and (min-width: 40em) {
+	   .cards {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-    }
+      }
 
-    .card {
+      .card {
         flex: 0 1 calc(50% - 1em);
-    }
-}
+      }
+  }
 
-@media screen and (min-width: 60em) {
-
+  @media screen and (min-width: 60em) {
     .card {
-        flex: 0 1 calc(33% - 1em);
+      flex: 0 1 calc(33% - 1em);
     }
-}
+  }
 
-
-</style>
+  </style>
 
 </head>
 <body>
 
    <header>
     <nav class="navbar" id="nav">
-        <a class="item siteName" href="index.html">HappyTails</a>
-        <a class="item" href="about.html">About</a>
-        <a class="item" href="animalList.html">Find a Dog</a>
-        <a class="item" href="Policy.html">Policy</a>
-        <a class="item" id="active" href="Success.html">Stories</a>
-		<a class="item" href="Resources.html">Resources</a>
-        <a class="item icon" href="javascript:void(0);" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-        </a>
+      <a class="item siteName" href="index.html">HappyTails</a>
+      <a class="item" href="about.html">About</a>
+      <a class="item" href="animalList.html">Find a Dog</a>
+      <a class="item" href="Policy.html">Policy</a>
+      <a class="item" id="active" href="Success.html">Stories</a>
+		  <a class="item" href="Resources.html">Resources</a>
+      <a class="item icon" href="javascript:void(0);" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
     </nav>
-</header>
+  </header>
 
-<section class="banner animalBanner"></section>
+  <section class="banner animalBanner"></section>
 
 
-<section class="container white">
-        <div class="wrapper">
-            <h1>Success Stories</h1>
-            <p class="description">Our dogs have been happily matched with many different families. Here are a few of our favorite success stories!</p>
-			<br><a class="button">Scroll Down</a>
-        </div>
-</section>
-
+  <section class="container white">
+    <div class="wrapper">
+      <h1>Success Stories</h1>
+        <p class="description">Our dogs have been happily matched with many different families. Here are a few of our favorite success stories!</p>
+			   <br><a class="button">Scroll Down</a>
+    </div>
+  </section>
 
 	<div class="cards">
 
-
 		<div class="card">
 			<img src="assets/img/Image1.jpg" alt="Avatar" style="width:100%">
-				<div class="cardText">
-					<h2>Troy</h2>
-					<p> Troy was adopted 3 years ago by his loving parents. They buy him lots of chew toys and he loves playing with the family's 7 year old boy. They are best friends good boys too!</p>
-					<div id="buttons0" class="buttons">
-						<button><img id="like0" class="like" src="assets/icon/like.png"></button>
-						<button><img id="heart0" class="heart" src="assets/icon/heart.png"></button>
-					</div>
-					<div id="clicked0" class="buttons"></div>
+			<div class="cardText">
+				<h2>Troy</h2>
+				<p> Troy was adopted 3 years ago by his loving parents. They buy him lots of chew toys and he loves playing with the family's 7 year old boy. They are best friends good boys too!</p>
+				<div id="buttons0" class="buttons">
+					<button><img id="like0" class="like" src="assets/icon/like.png"></button>
+					<button><img id="heart0" class="heart" src="assets/icon/heart.png"></button>
 				</div>
+				<div id="clicked0" class="buttons"></div>
+			</div>
 		</div>
 
 		<div class="card">
 			<img src="assets/img/Image2.jpg" alt="Avatar" style="width:100%">
-				<div class="cardText">
-						<h2>Star</h2>
-						<p> Star was adopted 2 months ago and is now spending her days enjoying life and staying active with her owner. They participate in dog contests together and Star has already won two of them!</p>
-						<div id="buttons1" class="buttons">
-							<button><img id="like1" class="like" src="assets/icon/like.png"></button>
-							<button><img id="heart1" class="heart" src="assets/icon/heart.png"></button>
-						</div>
-						<div id="clicked1" class="buttons"></div>
-				</div>
+			<div class="cardText">
+				<h2>Star</h2>
+					<p> Star was adopted 2 months ago and is now spending her days enjoying life and staying active with her owner. They participate in dog contests together and Star has already won two of them!</p>
+					<div id="buttons1" class="buttons">
+						<button><img id="like1" class="like" src="assets/icon/like.png"></button>
+						<button><img id="heart1" class="heart" src="assets/icon/heart.png"></button>
+					</div>
+					<div id="clicked1" class="buttons"></div>
+			</div>
 		</div>
 
 		<div class="card">
