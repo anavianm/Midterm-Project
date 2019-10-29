@@ -5,7 +5,7 @@
 <meta name="author" content="Korri, Max, Hyejin, and Mitch">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Adopt an Animal</title>
-
+	
 <link href="style.css" rel="stylesheet" type="text/css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="jquery-3.4.1.min.js"></script>
@@ -17,30 +17,24 @@
 
 
 <style>
-
 	@import url(https://fonts.googleapis.com/css?family=Roboto:400,300);
-
+/*
+	h1{
+		color:  #be7575;
+	}
+*/
 	.row1{
 		padding: 5% 10%;
-
 	}
-
 	.card {
-
-
 		margin-bottom: 2em;
 		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 		transition: 0.3s;
 		background-color: #fff;
-
-
-
 	}
-
 	.card p{
 		font-size: 1.2em;
 	}
-
 	.cardSmaller {
 		height: auto;
 		margin-top: 20px;
@@ -52,91 +46,85 @@
 		width: 20%;
 		max-height: 300px;
 		background-color: #fff;
+/*		left: 305;*/
 	}
-
 	.card:hover {
 		box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 	}
-
+/*
+	.container {
+	}
+*/
 	.cardContainer{
 		padding: 2px 16px;
 	}
-
 	.back{
 		background-color: #fff;
 	}
-
 	.hideme{
 		opacity:0;
 	}
-
 	.adoptMe{
+/*		background-color: #be7575;*/
+/*		border: none;*/
+/*		color: #fff;*/
+/*		padding: 15px 32px;*/
+/*		text-align: center;*/
+/*		text-decoration: none;*/
+/*		font-size: 16px;*/
 		display: inline-block;
 		position: absolute;
 		float: right;
 		bottom: 10px;
 		right: 10px;
 	}
-
 	.animalBanner{
 		background-image: url("assets/img/adoptImage.jpg");
 	}
-
 	.front{
-		height: auto;
-	}
-	.back{
-		height: auto;
+/*		display: flex !important;*/
 		background-color: #fff !important;
+/*		height: auto !important;*/
 	}
 	.back{
 		text-align: left !important;
 		text-align: left !important;
 		background-color: #fff !important;
+/*		display: flex !important;*/
+/*		height: auto !important;*/
 	}
-
-
-
 	@media screen and (min-width: 20em) {
 		.row1 {
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: space-between;
 		}
-
 		.card {
 			max-height: 32em;
+/*			max-height: 500px;*/
 			flex: 0 1 calc(100% - 3em);
 		}
 	}
-
 	@media screen and (min-width: 40em) {
 		.row1 {
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: space-between;
 		}
-
 		.card {
 			max-height: 40em;
 			flex: 0 1 calc(50% - 1em);
-
 		}
 	}
-
 	@media screen and (min-width: 60em) {
-
 		.card {
 			max-height: 50em;
 			flex: 0 1 calc(30% - 1em);
-
 		}
 	}
-
 	p {
 		font-size: 1.5vw;
 	}
-
 </style>
 </head>
 
@@ -160,7 +148,7 @@
 
 	<section class="container white">
 			<div class="wrapper">
-				<h1>Find a dog</h1>
+				<h2>Find a dog</h2>
 				<p class="description">Find a pal for life</p>
 				<br><a class="button">Scroll Down</a>
 			</div>
@@ -172,9 +160,8 @@
 			<div class="card" id="1">
 				<div class="front" id="front1">
 					<img src="assets/img/goldenRetriever.jpeg" alt="Avatar" style="width:100%">
-						<div class="container">
-							<h1>Lucy</h1>
 						<div class="cardContainer">
+	<!--					THis is the name-->
 							<h2>Lucy</h2>
 	<!--						This is the breed-->
 							<h3>Golden Retriever</h3>
@@ -187,7 +174,7 @@
 							<p>Likes: Chew toys, grass, and frisbees</p>
 							<p>Dislikes: Squirrels</p>
 							<p>Favorite Brand of Dog Food: Blue Buffalo</p>
-							<p>Lucy loves wide-open spaces and being active. She enjoys running around and playing frisbee. Although she loves to be outside, Lucy can’t stand being around squirrels and will chase them until they are out of sight. After a long day of running around, Lucy enjoys cuddling with her favorite stick. </p>
+							<p>Lucy loves wide-open spaces and being active. She enjoys running around and playing frisbee. Although she loves to be outside, Lucy also can’t stand being around squirrels and will chase them until they are out of sight. After a long day of running around, Lucy enjoys cuddling with her favorite stick. </p>
 
 
 							<a href="form_page.html" class="button-small adoptMe">Adopt Me</a>
@@ -229,7 +216,7 @@
 							<p>Likes: Stuffed animals, rubber balls, and long walks</p>
 							<p>Dislikes: Dirt</p>
 							<p>Favorite Brand of Dog Food: Taste of the Wild</p>
-							<p>Teddy is a sweetheart who loves to take long walks. She often likes to take her stuffed animals along with her. She prefers to walk on city streets rather than dirt or grass and otherwise prefers to be indoors.</p>
+							<p>Teddy is a sweetheart who loves to take long walks. She often likes to take her stuffed animals along with her. She prefers to walk on city streets rather than dirt or grass and otherwise prefers to indoors.</p>
 
 							<a href="form_page.html" class="button-small adoptMe">Adopt Me</a>
 						</div>
@@ -249,10 +236,10 @@
 					<div class="back" id="back4">
 							<div class="cardContainer">
 								<p>Age: 5 years</p>
-								<p>Likes: Fetch, sitting on laps, and small spaces</p>
+								<p>Likes: Fetch, sitting on laps, small spaces</p>
 								<p>Dislikes: Small spaces</p>
 								<p>Favorite Brand of Dog Food: Orijen</p>
-								<p>Lisa is one of our older dogs, but she is still a pup at heart. She is super active and loves to play fetch. When not playing fetch, she likes to sit on people’s laps. Lisa also likes to cuddle up in small spaces, but gets upset and barks at the small spaces that are now too small for her to fit into. </p>
+								<p>Lisa is one of our older dogs, but she is still a pup at heart. She is super active and loves to play fetch. When not playing fetch, she likes to sit on people’s laps. Lisa also likes to cuddle up in small spaces. Lisa gets upset and barks at the small spaces that are now too small for her to fit into. </p>
 
 								<a href="form_page.html" class="button-small adoptMe">Adopt Me</a>
 							</div>
@@ -290,7 +277,7 @@
 					<div class="back" id="back6">
 							<div class="cardContainer">
 								<p>Age: 8 months</p>
-								<p>Likes: Squirrels, birds, and cats</p>
+								<p>Likes: Squirrels, Birds, and Cats</p>
 								<p>Dislikes: Other dogs</p>
 								<p>Favorite Brand of Dog Food: Friskies</p>
 								<p>Samantha is not your typical pup. She is super friendly and curious. She loves going to the park and watching squirrels and birds. She also loves to play with cats. However, she is not particularly fond of other dogs and will often shy away from them.</p>
@@ -298,7 +285,9 @@
 							</div>
 					</div>
 			</div>
+<!--		</div>-->
 
+<!--		<div class="hideme">-->
 			<div class="card hideme" id="7">
 					<div class="front" id="front7">
 						<img src="assets/img/persian.png" alt="Avatar" style="width:100%">
@@ -334,7 +323,7 @@
 								<p>Likes: Sticks, small rocks, and the color red</p>
 								<p>Dislikes: Loud noises</p>
 								<p>Favorite Brand of Bird Food: Lyric</p>
-								<p>Cindy is a fun and energetic bird who likes to collect things. She often likes to pick at small crevices in the ground to look for small sticks or rocks. She is particularly fond of rocks that are red.</p>
+								<p>Cindy is a fun and energetic bird who likes to collect things. She often likes to pick at small crevices in the ground looking for small sticks or rocks. She is particularly fond of rocks that are red.</p>
 
 								<a href="form_page.html" class="button-small adoptMe">Adopt Me</a>
 							</div>
@@ -378,7 +367,7 @@
 								<p>Likes: People, metal bowls, and refrigerators</p>
 								<p>Dislikes: Darkness</p>
 								<p>Favorite Brand of Dog Food: Natural Balance</p>
-								<p>Chocola is a super friendly dog who loves meeting new people. She loves going on walks and letting other people pet her. At home, she can usually be found snuggling by a refrigerator or other large household appliance. Chocola is also afraid of the dark and will whimper if it’s dark and nobody is holding her.</p>
+								<p>Chocola is a super friendly dog who loves meeting new people. She loves going on walks and letting other people pet her. At home, she can usually be found snuggling by a refrigerator or other large household appliance. Chocola is also afraid of the dark and will whimper if it’s dark and there is nobody holding her.</p>
 
 								<a href="form_page.html" class="button-small adoptMe">Adopt Me</a>
 							</div>
@@ -424,7 +413,8 @@
 								<a href="form_page.html" class="button-small adoptMe">Adopt Me</a>
 							</div>
 					</div>
-			</div>
+<!--			</div>-->
+		</div>
 
 
 
@@ -438,33 +428,27 @@
 		var $id = "#";
 		var $front = "#front";
 		var $back = "#back";
-
 			for(var i = 1; i < 13; i++ ){
 				$($id + i).flip({
 					front: $front + i,
 					back: $back + i,
 					trigger: 'hover',
 					reverse: true,
-					autoSize: true,
+//					autoSize: true,
 					forceHeight: true
 				});
 			}
-
-
 		$(document).ready(function() {
 			$(window).scroll( function(){
 				$('.hideme').each( function(i){
-
 					var bottom_of_object = ($(this).offset().top + $(this).outerHeight())/1.4;
 					var bottom_of_window = $(window).scrollTop() + $(window).height();
-
 					if( bottom_of_window > bottom_of_object ){
 						$(this).animate({'opacity':'1'},100);
 					}
 				});
 			});
 		});
-
 		function myFunction() {
 			var x = document.getElementById("nav");
 			if (x.className === "navbar") {
@@ -473,21 +457,16 @@
 				x.className = "navbar";
 			}
 		}
-
 		$(".button").click(function() {
     		$('html,body').animate({
        		 scrollTop: $(".row1").offset().top},
         	'slow');
 		});
-
 		$(".top").click(function() {
     		$('html,body').animate({
        		 scrollTop: $(".navbar").offset().top},
         	'slow');
 		});
-
-
-
 	</script>
 
 	  <footer>
