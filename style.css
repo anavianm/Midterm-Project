@@ -19,16 +19,19 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     display: flex;
     flex-direction: vertical;
     justify-content: center;
     margin: auto;
     vertical-align: middle;
-    
 }
 
 .first {
     background-image: url("assets/img/dog4.jpg");
+
 }
 
 .second {
@@ -38,6 +41,15 @@ body {
 .third {
     background-image: url("assets/img/dog5.jpg")
 }
+
+.fourth {
+    background-image: url("assets/img/dog10.jpg");
+}
+
+.fifth {
+    background-image: url("assets/img/dog11.jpg");
+}
+
 
 .wrapper {
     margin: auto;
@@ -132,7 +144,7 @@ footer p {
     /* text-transform: uppercase; */
     display: block;
     text-align: center;
-    width: 25%;
+    width: 30%;
     border-radius: 30px;
 }
 
@@ -253,6 +265,7 @@ footer a:hover {
     width: 120%;
 }
 
+/* navigation bar */
 .navbar {
     overflow: hidden;
     background-color: #FAE0B7;
@@ -296,7 +309,7 @@ footer a:hover {
 }
 
 /* responsive design */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
     /* mobile */
     .container {padding: 10%;}
     .column-two {flex: 0 0 100%; text-align: center;}
