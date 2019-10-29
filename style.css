@@ -39,6 +39,15 @@ body {
     background-image: url("assets/img/dog5.jpg")
 }
 
+.fourth {
+    background-image: url("assets/img/dog10.jpg");
+}
+
+.fifth {
+    background-image: url("assets/img/dog11.jpg");
+}
+
+
 .wrapper {
     margin: auto;
     width: 100%;
@@ -132,7 +141,7 @@ footer p {
     /* text-transform: uppercase; */
     display: block;
     text-align: center;
-    width: 25%;
+    width: 30%;
     border-radius: 30px;
 }
 
