@@ -367,4 +367,4 @@
     return this;
   };
 
-}( jQuery ));// JavaScript Document
+}( jQuery ));
