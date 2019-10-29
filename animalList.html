@@ -22,43 +22,24 @@
 */
 
 	.row1{
-		height: auto;
-		margin-top: 20px;
-		padding-top: 40px;
-/*		padding: 20px;*/
-		display: flex;
-/*		justify-content: center;*/
-		flex-wrap: wrap;
-		width: 100%;
-		position: relative;
-/*		left: 305;*/
-/*		flex-wrap: wrap;*/
-		justify-content: center;
-		align-items: flex-start;
+		padding: 5% 10%;
 
 	}
 
 	.card {
-		text-align: left !important;
-		margin-top: 20px;
-/*		margin-left: 10px;*/
-/*		margin-right: 10px;*/
-		margin-bottom: 10px;
-		float: left;
+		
+		max-height: 50em;
+		margin-bottom: 2em;
 		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 		transition: 0.3s;
-/*		width: 20%;*/
-		max-height: 1000px;
 		background-color: #fff;
-		height: auto !important;
-		display: inline-block;
-    	flex: 0 1 calc(25% - 1em);
+
 
 
 	}
 	
 	.card p{
-		font-size: 30px;
+		font-size: 1.2em;
 	}
 
 	.cardSmaller {
@@ -81,7 +62,12 @@
 		box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 	}
 
+/*
 	.container {
+		
+	}
+*/
+	.cardContainer{
 		padding: 2px 16px;
 	}
 
@@ -108,6 +94,9 @@
 		right: 10px;
 	}
 
+	.animalBanner{
+		background-image: url("assets/img/adoptImage.jpg");
+	}
 
 	.front{
 /*		display: flex !important;*/
@@ -121,6 +110,7 @@
 /*		display: flex !important;*/
 /*		height: auto !important;*/
 	}
+
 	
 
 	@media screen and (min-width: 20em) {
@@ -176,21 +166,32 @@
 			</a>
 		</nav>
 	</header>
+	
+	<section class="banner animalBanner"></section>
+
+	<section class="container white">
+			<div class="wrapper">
+				<h2>Find a dog</h2>
+				<p class="description">Find a pal for life</p>
+				<br><a class="button">Scroll Down</a>
+			</div>
+
+	</section>
 
 <!--	<div id="belowHeader">-->
 		<div class="row1">
 			<div class="card" id="1">
 				<div class="front" id="front1">
 					<img src="assets/img/goldenRetriever.jpeg" alt="Avatar" style="width:100%">
-						<div class="container">
+						<div class="cardContainer">
 	<!--					THis is the name-->
-							<h1>Lucy</h1>
+							<h2>Lucy</h2>
 	<!--						This is the breed-->
 							<h3>Golden Retriever</h3>
 						</div>
 				</div>
 				<div class="back" id="back1">
-						<div class="container">
+						<div class="cardContainer">
 	<!--						The tagline for reach -->
 							<p>Age: 3 years</p>
 							<p>Likes: Chew toys, grass, and frisbees</p>
@@ -207,13 +208,13 @@
 			<div class="card" id="2">
 				<div class="front" id="front2">
 					<img src="assets/img/beagle.jpg" alt="Avatar" style="width:100%">
-						<div class="container">
-							<h1>Henry</h1>
+						<div class="cardContainer">
+							<h2>Henry</h2>
 							<h3>Beagle</h3>
 						</div>
 				</div>
 				<div class="back" id="back2">
-						<div class="container">
+						<div class="cardContainer">
 							<p>Age: 6 months</p>
 							<p>Likes: Small sticks, soft pillows, and plushies</p>
 							<p>Dislikes: Cold furniture</p>
@@ -227,13 +228,13 @@
 			<div class="card" id="3">
 				<div class="front" id="front3">
 					<img src="assets/img/poodle.jpg" alt="Avatar" style="width:100%">
-						<div class="container">
-							<h1>Teddy</h1>
+						<div class="cardContainer">
+							<h2>Teddy</h2>
 							<h3>Poodle</h3>
 						</div>
 				</div>
 				<div class="back" id="back3">
-						<div class="container">
+						<div class="cardContainer">
 							<p>Age: 9 months</p>
 							<p>Likes: Stuffed animals, rubber balls, and long walks</p>
 							<p>Dislikes: Dirt</p>
@@ -250,13 +251,13 @@
 			<div class="card" id="4">
 					<div class="front" id="front4">
 						<img src="assets/img/labrador.jpg" alt="Avatar" style="width:100%">
-							<div class="container">
-								<h1>Lisa</h1>
+							<div class="cardContainer">
+								<h2>Lisa</h2>
 								<h3>Labrador</h3>
 							</div>
 					</div>
 					<div class="back" id="back4">
-							<div class="container">
+							<div class="cardContainer">
 								<p>Age: 5 years</p>
 								<p>Likes: Fetch, sitting on laps, small spaces</p>
 								<p>Dislikes: Small spaces</p>
@@ -271,13 +272,13 @@
 			<div class="card" id="5">
 					<div class="front" id="front5">
 						<img src="assets/img/pug.jpg" alt="Avatar" style="width:100%">
-							<div class="container">
-								<h1>Fluffy</h1>
+							<div class="cardContainer">
+								<h2>Fluffy</h2>
 								<h3>Pug</h3>
 							</div>
 					</div>
 					<div class="back" id="back5">
-							<div class="container">
+							<div class="cardContainer">
 								<p>Age: 2 years</p>
 								<p>Likes: Bacon, digging holes, and dirt</p>
 								<p>Dislikes: His reflection</p>
@@ -291,13 +292,13 @@
 			<div class="card" id="6">
 					<div class="front" id="front6">
 						<img src="assets/img/shiba.jpg" alt="Avatar" style="width:100%">
-							<div class="container">
-								<h1>Samantha</h1>
+							<div class="cardContainer">
+								<h2>Samantha</h2>
 								<h3>Shiba</h3>
 							</div>
 					</div>
 					<div class="back" id="back6">
-							<div class="container">
+							<div class="cardContainer">
 								<p>Age: 8 months</p>
 								<p>Likes: Squirrels, Birds, and Cats</p>
 								<p>Dislikes: Other dogs</p>
@@ -313,13 +314,13 @@
 			<div class="card hideme" id="7">
 					<div class="front" id="front7">
 						<img src="assets/img/persian.png" alt="Avatar" style="width:100%">
-							<div class="container">
-								<h1><b>Charley</b></h1>
+							<div class="cardContainer">
+								<h2>Charley</h2>
 								<h3>Persian Cat</h3>
 							</div>
 					</div>
 					<div class="back" id="back7">
-							<div class="container">
+							<div class="cardContainer">
 								<p>Age: 4 years</p>
 								<p>Likes: High places, windows, and plants</p>
 								<p>Dislikes: Small children</p>
@@ -334,13 +335,13 @@
 			<div class="card hideme" id="8">
 					<div class="front" id="front8">
 						<img src="assets/img/maccaw.jpg" alt="Avatar" style="width:100%">
-							<div class="container">
-								<h1><b>Cindy</b></h1>
+							<div class="cardContainer">
+								<h2>Cindy</h2>
 								<h3>MaCaw Parrot</h3>
 							</div>
 					</div>
 					<div class="back" id="back8">
-							<div class="container">
+							<div class="cardContainer">
 								<p>Age: 3 years</p>
 								<p>Likes: Sticks, small rocks, and the color red</p>
 								<p>Dislikes: Loud noises</p>
@@ -355,13 +356,13 @@
 			<div class="card hideme" id="9">
 					<div class="front" id="front9">
 						<img src="assets/img/munchkin.jpg" alt="Avatar" style="width:100%">
-							<div class="container">
-								<h1><b>Tiny</b></h1>
+							<div class="cardContainer">
+								<h2>Tiny</h2>
 								<h3>Munchkin Cat</h3>
 							</div>
 					</div>
 					<div class="back" id="back9">
-							<div class="container">
+							<div class="cardContainer">
 								<p>Age: 1 year</p>
 								<p>Likes: Fluffy furniture, large spaces, and fetch</p>
 								<p>Dislikes: Bugs</p>
@@ -378,13 +379,13 @@
 			<div class="card hideme" id="10">
 					<div class="front" id="front10">
 						<img src="assets/img/chocola.jpg" alt="Avatar" style="width:100%">
-							<div class="container">
-								<h1><b>Chocola</b></h1>
+							<div class="cardContainer">
+								<h2>Chocola</h2>
 								<h3>Toy Poodle</h3>
 							</div>
 					</div>
 					<div class="back" id="back10">
-							<div class="container">
+							<div class="cardContainer">
 								<p>Age: 2 years</p>
 								<p>Likes: People, metal bowls, and refrigerators</p>
 								<p>Dislikes: Darkness</p>
@@ -399,13 +400,13 @@
 			<div class="card hideme" id="11">
 					<div class="front" id="front11">
 						<img src="assets/img/dambo.jpg" alt="Avatar" style="width:100%">
-							<div class="container">
-								<h1><b>Dambo</b></h1>
+							<div class="cardContainer">
+								<h2>Dambo</h2>
 								<h3>Miniature Dachshund</h3>
 							</div>
 					</div>
 					<div class="back" id="back11">
-							<div class="container">
+							<div class="cardContainer">
 								<p>Age: 6 years</p>
 								<p>Likes: Food, small objects, and putting things in her mouth</p>
 								<p>Dislikes: Objects that don’t fit in her mouth</p>
@@ -420,13 +421,13 @@
 			<div class="card hideme" id="12">
 					<div class="front" id="front12">
 						<img src="assets/img/mogu.jpg" alt="Avatar" style="width:100%">
-							<div class="container">
-								<h1>Mogu</h1>
+							<div class="cardContainer">
+								<h2>Mogu</h2>
 								<h3>Yorkshire Terrier</h3>
 							</div>
 					</div>
 					<div class="back" id="back12">
-							<div class="container">
+							<div class="cardContainer">
 								<p>Age: 2 years</p>
 								<p>Likes: Eating, sleeping, and car rides</p>
 								<p>Dislikes: Walks</p>
@@ -478,7 +479,13 @@
 				x.className = "navbar";
 			}
 		}
-
+		
+		$(".button").click(function() {
+    		$('html,body').animate({
+       		 scrollTop: $(".row1").offset().top},
+        	'slow');
+		});
+		
 
 
 
